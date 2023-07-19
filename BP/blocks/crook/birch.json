@@ -1,0 +1,38 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:block": {
+        "description": {
+            "identifier": "exnihilo:crook_birch_leaves",
+            "menu_category": {
+                "category": "none",
+                "group": "none",
+                "is_hidden_in_commands": true
+            }
+        },
+        "components": {
+            "minecraft:selection_box": true,
+            "minecraft:collision_box": false,
+            "minecraft:light_dampening": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "invisible",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:on_placed": {
+                "event": "on_placed"
+            }
+        },
+        "events": {
+            "on_placed": {
+                "spawn_loot": {
+                    "table": "loot_tables/crook/birch.json"
+                },
+                "set_block": {
+                    "block_type": "air"
+                }
+            }
+        }
+    }
+}

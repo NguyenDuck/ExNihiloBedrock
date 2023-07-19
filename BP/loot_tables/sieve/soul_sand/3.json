@@ -1,0 +1,70 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "loot_tables/sieve/soul_sand/1.json"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "quartz",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "quartz",
+                    "weight": 80
+                },
+                {
+                    "type": "empty",
+                    "weight": 20
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "quartz",
+                    "weight": 33
+                },
+                {
+                    "type": "empty",
+                    "weight": 67
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ghast_tear",
+                    "weight": 2
+                },
+                {
+                    "type": "empty",
+                    "weight": 98
+                }
+            ]
+        }
+    ]
+}

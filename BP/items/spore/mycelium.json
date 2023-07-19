@@ -1,0 +1,27 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:spore_mycelium"
+        },
+        "components": {
+            "tag:exnihilo:seed": {},
+            "tag:minecraft:seed": {},
+            "tag:minecraft:mycelium": {},
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:icon": {
+                "texture": "spore_mycelium"
+            },
+            "minecraft:on_use_on": {
+                "on_use_on": {
+                    "event": "exnihilo:idle"
+                }
+            }
+        },
+        "events": {
+            "exnihilo:idle": {}
+        }
+    }
+}

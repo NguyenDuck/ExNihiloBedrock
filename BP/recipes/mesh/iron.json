@@ -1,0 +1,28 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:mesh_iron"
+        },
+        "group": "exnihilo.mesh",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "I I",
+            "IMI",
+            "I I"
+        ],
+        "key": {
+            "M": {
+                "item": "exnihilo:mesh_flint"
+            },
+            "I": {
+                "item": "iron_ingot"
+            }
+        },
+        "result": {
+            "item": "exnihilo:mesh_iron"
+        }
+    }
+}

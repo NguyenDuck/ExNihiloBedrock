@@ -1,0 +1,28 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:hammer_iron"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " M ",
+            " SM",
+            "S  "
+        ],
+        "key": {
+            "M": {
+                "item": "iron_ingot"
+            },
+            "S": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "exnihilo:hammer_iron",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,441 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_deepslate",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_deepslate",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_andesite",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_andesite",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_diorite",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_diorite",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_basalt",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_basalt",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_blackstone",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_blackstone",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_tuff",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_tuff",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_calcite",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_calcite",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_granite",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_granite",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_dripstone",
+                    "weight": 10,
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": "exnihilo:pebble_dripstone",
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": {
+                                                "min": 0,
+                                                "max": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_stone"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_stone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ],
+                    "weight": 10
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_stone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ],
+                    "weight": 50
+                },
+                {
+                    "type": "empty",
+                    "weight": 50
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "beetroot_seeds",
+                    "weight": 35
+                },
+                {
+                    "type": "empty",
+                    "weight": 65
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "pumpkin_seeds",
+                    "weight": 35
+                },
+                {
+                    "type": "empty",
+                    "weight": 65
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "melon_seeds",
+                    "weight": 35
+                },
+                {
+                    "type": "empty",
+                    "weight": 65
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wheat_seeds",
+                    "weight": 70
+                },
+                {
+                    "type": "empty",
+                    "weight": 30
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:seeds_grass",
+                    "weight": 5
+                },
+                {
+                    "type": "empty",
+                    "weight": 95
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:spore_mycelium",
+                    "weight": 5
+                },
+                {
+                    "type": "empty",
+                    "weight": 95
+                }
+            ]
+        }
+    ]
+}

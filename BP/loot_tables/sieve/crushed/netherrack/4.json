@@ -1,0 +1,75 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "loot_tables/sieve/crushed/netherrack/1.json"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_gold",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ],
+                    "weight": 25
+                },
+                {
+                    "type": "empty",
+                    "weight": 75
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_gold",
+                    "weight": 40
+                },
+                {
+                    "type": "empty",
+                    "weight": 60
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "netherite_scrap",
+                    "weight": 0.4
+                },
+                {
+                    "type": "empty",
+                    "weight": 99.6
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "netherite_scrap",
+                    "weight": 0.8
+                },
+                {
+                    "type": "empty",
+                    "weight": 99.2
+                }
+            ]
+        }
+    ]
+}

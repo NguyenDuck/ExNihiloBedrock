@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "loot_tables/sieve/sand/2.json"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "prismarine_shard",
+                    "weight": 4
+                },
+                {
+                    "type": "empty",
+                    "weight": 96
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_iron",
+                    "weight": 4
+                },
+                {
+                    "type": "empty",
+                    "weight": 96
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "prismarine_crystals",
+                    "weight": 1
+                },
+                {
+                    "type": "empty",
+                    "weight": 99
+                }
+            ]
+        }
+    ]
+}

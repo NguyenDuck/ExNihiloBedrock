@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"name": "ExNihiloBedrock",
+	"namespace": "exnihilo",
+	"authors": [
+		"NguyenDuck"
+	],
+	"targetVersion": "1.20.10",
+	"description": "Included in tree",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": true
+	},
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "ExNihiloBedrock"
+				}
+			]
+		]
+	},
+	"bridge": {
+		"darkTheme": "bridge.noSelection"
+	}
+}

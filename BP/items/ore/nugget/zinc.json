@@ -1,0 +1,19 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:ore_nugget_zinc"
+        },
+        "components": {
+            "tag:exnihilo:zinc": {},
+            "tag:exnihilo:nugget": {},
+            "tag:minecraft:ore": {},
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:icon": {
+                "texture": "ore_nugget_zinc"
+            }
+        }
+    }
+}

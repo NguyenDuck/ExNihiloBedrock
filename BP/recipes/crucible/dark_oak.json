@@ -1,0 +1,32 @@
+{
+    "format_version": "1.19.60",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:crucible_dark_oak"
+        },
+        "group": "exnihilo.crucible",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "P P",
+            "PsP",
+            "S S"
+        ],
+        "key": {
+            "S": {
+                "item": "stick"
+            },
+            "P": {
+                "item": "stripped_dark_oak_log"
+            },
+            "s": {
+                "item": "wooden_slab",
+                "data": 5
+            }
+        },
+        "result": {
+            "item": "exnihilo:crucible_dark_oak"
+        }
+    }
+}

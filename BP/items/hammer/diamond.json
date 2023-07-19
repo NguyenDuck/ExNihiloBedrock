@@ -1,0 +1,95 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:hammer_diamond"
+        },
+        "components": {
+            "tag:exnihilo:hammer": {},
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": {
+                "texture": "hammer_diamond"
+            },
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:durability": {
+                "max_durability": 1562
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "diamond"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "exnihilo:hammer_diamond"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "on_dig": {
+                    "event": "durability"
+                },
+                "destroy_speeds": [
+                    {
+                        "block": "stone",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 8
+                    },
+                    {
+                        "block": "cobblestone",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 8
+                    },
+                    {
+                        "block": "gravel",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 8
+                    },
+                    {
+                        "block": "sand",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 8
+                    },
+                    {
+                        "block": "netherrack",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 8
+                    },
+                    {
+                        "block": "end_stone",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 8
+                    }
+                ]
+            }
+        },
+        "events": {
+            "durability": {
+                "damage": {
+                    "type": "all",
+                    "amount": 1
+                }
+            }
+        }
+    }
+}

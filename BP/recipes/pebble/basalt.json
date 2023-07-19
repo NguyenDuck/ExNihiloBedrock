@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "exnihilo:pebble_basalt"
+        },
+        "group": "exnihilo.pebble",
+        "ingredients": [
+            {
+                "item": "basalt",
+                "count": 1
+            }
+        ],
+        "tags": ["crafting_table"],
+        "result": {
+            "item": "exnihilo:pebble_basalt",
+            "count": 4
+        }
+    }
+}

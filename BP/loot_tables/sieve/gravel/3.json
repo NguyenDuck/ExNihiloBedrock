@@ -1,0 +1,195 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "loot_tables/sieve/gravel/2.json"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_nickel",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_platinum",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_aluminum",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_tin",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_silver",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_zinc",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_lead",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_gold",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_iron",
+                    "weight": 15
+                },
+                {
+                    "type": "empty",
+                    "weight": 85
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_copper",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:ore_piece_uranium",
+                    "weight": 7.5
+                },
+                {
+                    "type": "empty",
+                    "weight": 92.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "emerald",
+                    "weight": 0.8
+                },
+                {
+                    "type": "empty",
+                    "weight": 99.2
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "diamond",
+                    "weight": 0.8
+                },
+                {
+                    "type": "empty",
+                    "weight": 99.2
+                }
+            ]
+        }
+    ]
+}

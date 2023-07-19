@@ -1,0 +1,19 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:ore_raw_nickel"
+        },
+        "components": {
+            "tag:exnihilo:nickel": {},
+            "tag:exnihilo:raw": {},
+            "tag:minecraft:ore": {},
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:icon": {
+                "texture": "ore_raw_nickel"
+            }
+        }
+    }
+}

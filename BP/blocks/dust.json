@@ -1,0 +1,24 @@
+{
+	"format_version": "1.19.70",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:dust"
+		},
+		"components": {
+			"exnihilo:decoration_block": {},
+			"minecraft:unit_cube": {},
+			"minecraft:light_dampening": 15,
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "dust"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "loot_tables/sieve/leaves/golden/3.json"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "apple",
+                    "weight": 20
+                },
+                {
+                    "type": "empty",
+                    "weight": 80
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "golden_apple",
+                    "weight": 1
+                },
+                {
+                    "type": "empty",
+                    "weight": 99
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:silkworm",
+                    "weight": 20
+                },
+                {
+                    "type": "empty",
+                    "weight": 80
+                }
+            ]
+        }
+    ]
+}

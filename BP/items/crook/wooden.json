@@ -1,0 +1,103 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:crook_wooden"
+        },
+        "components": {
+            "tag:exnihilo:crook": {},
+            "tag:minecraft:wood": {},
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:fuel": {
+                "duration": 20
+            },
+            "minecraft:icon": {
+                "texture": "crook_wooden"
+            },
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:durability": {
+                "max_durability": 60
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "exnihilo:crook_wooden"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+                    },
+                    {
+                        "items": [
+                            "stick"
+                        ],
+                        "repair_amount": "query.max_durability / 4"
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "on_dig": {
+                    "event": "durability"
+                },
+                "destroy_speeds": [
+                    {
+                        "block": "leaves",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 2
+                    },
+                    {
+                        "block": "leaves2",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 2
+                    },
+                    {
+                        "block": "mangrove_leaves",
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 2
+                    },
+                    {
+                        "block": {
+                            "tags": "query.all_tags('exnihilo:infest_leaves')"
+                        },
+                        "on_dig": {
+                            "event": "durability"
+                        },
+                        "speed": 2
+                    }
+                ]
+            },
+            "minecraft:render_offsets": {
+                "main_hand": {
+                    "third_person": {
+                        "scale": [
+                            0.05,
+                            0.05,
+                            0.05
+                        ],
+                        "position": [
+                            0,
+                            0.75,
+                            -0.3
+                        ]
+                    }
+                }
+            }
+        },
+        "events": {
+            "durability": {
+                "damage": {
+                    "type": "all",
+                    "amount": 1
+                }
+            }
+        }
+    }
+}

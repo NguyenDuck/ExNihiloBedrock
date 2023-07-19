@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "dirt"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "dirt",
+                    "weight": 40
+                },
+                {
+                    "type": "empty",
+                    "weight": 60
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gravel",
+                    "weight": 40
+                },
+                {
+                    "type": "empty",
+                    "weight": 60
+                }
+            ]
+        }
+    ]
+}

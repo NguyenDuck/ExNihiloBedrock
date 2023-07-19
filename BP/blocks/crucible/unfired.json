@@ -1,0 +1,115 @@
+{
+    "format_version": "1.19.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "exnihilo:crucible_unfired",
+            "menu_category": {
+                "category": "items",
+                "group": "items"
+            }
+        },
+        "components": {
+            "minecraft:geometry": "geometry.crucible",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
+            "minecraft:part_visibility": {
+                "conditions": {
+                    "water_8": "0",
+                    "water_40": "0",
+                    "water_72": "0",
+                    "water_104": "0",
+                    "water_136": "0",
+                    "water_168": "0",
+                    "water_200": "0",
+                    "water_232": "0",
+                    "water_264": "0",
+                    "water_296": "0",
+                    "water_328": "0",
+                    "water_360": "0",
+                    "water_392": "0",
+                    "water_424": "0",
+                    "water_456": "0",
+                    "water_488": "0",
+                    "water_520": "0",
+                    "water_552": "0",
+                    "water_584": "0",
+                    "water_616": "0",
+                    "water_648": "0",
+                    "water_680": "0",
+                    "water_712": "0",
+                    "water_744": "0",
+                    "water_776": "0",
+                    "water_808": "0",
+                    "water_840": "0",
+                    "water_872": "0",
+                    "water_904": "0",
+                    "water_936": "0",
+                    "water_968": "0",
+                    "water_1000": "0",
+                    "leaves_8": "0",
+                    "leaves_40": "0",
+                    "leaves_72": "0",
+                    "leaves_104": "0",
+                    "leaves_136": "0",
+                    "leaves_168": "0",
+                    "leaves_200": "0",
+                    "leaves_232": "0",
+                    "leaves_264": "0",
+                    "leaves_296": "0",
+                    "leaves_328": "0",
+                    "leaves_360": "0",
+                    "leaves_392": "0",
+                    "leaves_424": "0",
+                    "leaves_456": "0",
+                    "leaves_488": "0",
+                    "leaves_520": "0",
+                    "leaves_552": "0",
+                    "leaves_584": "0",
+                    "leaves_616": "0",
+                    "leaves_648": "0",
+                    "leaves_680": "0",
+                    "leaves_712": "0",
+                    "leaves_744": "0",
+                    "leaves_776": "0",
+                    "leaves_808": "0",
+                    "leaves_840": "0",
+                    "leaves_872": "0",
+                    "leaves_904": "0",
+                    "leaves_936": "0",
+                    "leaves_968": "0",
+                    "leaves_1000": "0"
+                }
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crucible_unfired_side",
+                    "render_method": "alpha_test"
+                },
+                "up": {
+                    "texture": "crucible_unfired_top",
+                    "render_method": "alpha_test"
+                },
+                "down": {
+                    "texture": "crucible_unfired_bottom",
+                    "render_method": "alpha_test"
+                },
+                "east": {
+                    "texture": "crucible_unfired_inside",
+                    "render_method": "alpha_test"
+                },
+                "south": {
+                    "texture": "invisible",
+                    "render_method": "alpha_test"
+                },
+                "west": {
+                    "texture": "invisible",
+                    "render_method": "alpha_test"
+                }
+            }
+        }
+    }
+}

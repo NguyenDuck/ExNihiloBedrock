@@ -1,0 +1,28 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:mesh_flint"
+        },
+        "group": "exnihilo.mesh",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "F F",
+            "FMF",
+            "F F"
+        ],
+        "key": {
+            "M": {
+                "item": "exnihilo:mesh_string"
+            },
+            "F": {
+                "item": "flint"
+            }
+        },
+        "result": {
+            "item": "exnihilo:mesh_flint"
+        }
+    }
+}

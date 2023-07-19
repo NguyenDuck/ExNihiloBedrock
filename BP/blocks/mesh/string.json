@@ -1,0 +1,37 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:mesh_string",
+			"menu_category": {
+				"category": "items",
+				"group": "items"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.mesh",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mesh_string",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:placement_filter": {
+				"allowed_faces": [
+					"down"
+				],
+				"block_filter": [
+					"dragon_egg"
+				]
+			},
+			"minecraft:on_placed": {
+				"event": "destroy"
+			}
+		},
+		"events": {
+			"destroy": {
+				"die": {}
+			}
+		}
+	}
+}

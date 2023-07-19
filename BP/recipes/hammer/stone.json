@@ -1,0 +1,28 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:hammer_stone"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " M ",
+            " SM",
+            "S  "
+        ],
+        "key": {
+            "M": {
+                "item": "cobblestone"
+            },
+            "S": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "exnihilo:hammer_stone",
+            "count": 1
+        }
+    }
+}

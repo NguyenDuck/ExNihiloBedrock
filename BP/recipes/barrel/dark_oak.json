@@ -1,0 +1,30 @@
+{
+    "format_version": "1.19.60",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:barrel_dark_oak"
+        },
+        "group": "exnihilo.barrel",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "p p",
+            "p p",
+            "psp"
+        ],
+        "key": {
+            "p": {
+                "item": "planks",
+                "data": 5
+            },
+            "s": {
+                "item": "wooden_slab",
+                "data": 5
+            }
+        },
+        "result": {
+            "item": "exnihilo:barrel_dark_oak"
+        }
+    }
+}

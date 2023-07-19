@@ -1,0 +1,25 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:ore_nugget_to_ingot_lead"
+        },
+        "group": "exnihilo.ingot",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "***",
+            "***",
+            "***"
+        ],
+        "key": {
+            "*": {
+                "item": "exnihilo:ore_nugget_lead"
+            }
+        },
+        "result": {
+            "item": "exnihilo:ore_ingot_lead"
+        }
+    }
+}

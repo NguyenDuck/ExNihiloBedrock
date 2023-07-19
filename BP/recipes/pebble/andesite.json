@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "exnihilo:pebble_andesite"
+        },
+        "group": "exnihilo.pebble",
+        "ingredients": [
+            {
+                "item": "stone",
+                "count": 1,
+                "data": 5
+            }
+        ],
+        "tags": ["crafting_table"],
+        "result": {
+            "item": "exnihilo:pebble_andesite",
+            "count": 4
+        }
+    }
+}

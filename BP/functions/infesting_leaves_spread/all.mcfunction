@@ -1,0 +1,6 @@
+function infesting_leaves_spread/oak
+function infesting_leaves_spread/spruce
+function infesting_leaves_spread/birch
+function infesting_leaves_spread/jungle
+function infesting_leaves_spread/acacia
+function infesting_leaves_spread/dark_oak

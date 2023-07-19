@@ -1,0 +1,110 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:block": {
+        "description": {
+            "identifier": "exnihilo:infesting_leaves_dark_oak",
+            "menu_category": {
+                "category": "none",
+                "group": "none"
+            },
+            "properties": {
+                "exnihilo:infest_stage_alpha": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ],
+                "exnihilo:infest_stage_beta": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            }
+        },
+        "components": {
+            "tag:exnihilo:infest_leaves": {},
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:light_dampening": 5,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.2
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "blend",
+                    "texture": "infesting_dark_oak"
+                }
+            },
+            "minecraft:flammable": {
+                "destroy_chance_modifier": 30,
+                "catch_chance_modifier": 10
+            },
+            "minecraft:queued_ticking": {
+                "interval_range": [
+                    1,
+                    10
+                ],
+                "looping": true,
+                "on_tick": {
+                    "event": "exnihilo:update_infested_stage"
+                }
+            }
+        },
+        "events": {
+            "exnihilo:update_infested_stage": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('exnihilo:infest_stage_alpha') < 10",
+                        "sequence": [
+                            {
+                                "condition": "query.block_property('exnihilo:infest_stage_beta') < 10",
+                                "set_block_property": {
+                                    "exnihilo:infest_stage_beta": "query.block_property('exnihilo:infest_stage_beta') + 1"
+                                }
+                            },
+                            {
+                                "condition": "query.block_property('exnihilo:infest_stage_beta') == 10",
+                                "set_block_property": {
+                                    "exnihilo:infest_stage_alpha": "query.block_property('exnihilo:infest_stage_alpha') + 1",
+                                    "exnihilo:infest_stage_beta": 0
+                                },
+                                "run_command": {
+                                    "command": "/function infesting_leaves_spread/all"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "query.block_property('exnihilo:infest_stage_alpha') == 10",
+                        "set_block": {
+                            "block_type": "exnihilo:infested_leaves_dark_oak"
+                        }
+                    }
+                ]
+            },
+            "exnihilo:decay": {
+                "set_block": {
+                    "block_type": "air"
+                }
+            }
+        }
+    }
+}

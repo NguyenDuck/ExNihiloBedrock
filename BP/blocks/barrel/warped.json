@@ -1,0 +1,406 @@
+{
+    "format_version": "1.19.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "exnihilo:barrel_warped",
+            "menu_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "properties": {
+                "exnihilo:mode": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "exnihilo:type": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ],
+                "exnihilo:stage_alpha": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "exnihilo:stage_beta": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            }
+        },
+        "components": {
+            "tag:exnihilo:barrel": {},
+            "tag:material:wooden": {},
+            "minecraft:geometry": "geometry.barrel",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
+            "minecraft:part_visibility": {
+                "conditions": {
+                    "8": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "24": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "40": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "56": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "72": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "88": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "104": "q.block_property('exnihilo:stage_beta') == 0 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "120": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "136": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "152": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "168": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "184": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "200": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "216": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "232": "q.block_property('exnihilo:stage_beta') == 1 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "248": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "264": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "280": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "296": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "312": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "328": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "344": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "360": "q.block_property('exnihilo:stage_beta') == 2 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "376": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "392": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "408": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "424": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "440": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "456": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "472": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "488": "q.block_property('exnihilo:stage_beta') == 3 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "504": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "520": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "536": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "552": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "568": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "584": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "600": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "616": "q.block_property('exnihilo:stage_beta') == 4 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "632": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "648": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "664": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "680": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "696": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "712": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "728": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "744": "q.block_property('exnihilo:stage_beta') == 5 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "760": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "776": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "792": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "808": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "824": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "840": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "856": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "872": "q.block_property('exnihilo:stage_beta') == 6 && q.block_property('exnihilo:stage_alpha') == 7",
+                    "888": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 0",
+                    "904": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 1",
+                    "920": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 2",
+                    "936": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 3",
+                    "952": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 4",
+                    "968": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 5",
+                    "984": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 6",
+                    "1000": "q.block_property('exnihilo:stage_beta') == 7 && q.block_property('exnihilo:stage_alpha') == 7"
+                }
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "barrel_warped_side"
+                },
+                "up": {
+                    "texture": "barrel_warped_top"
+                },
+                "down": {
+                    "texture": "barrel_warped_bottom"
+                }
+            },
+            "minecraft:on_interact": {
+                "condition": "!query.is_item_name_any('slot.weapon.mainhand', 'exnihilo:barrel_warped')",
+                "event": "exnihilo:idle"
+            },
+            "minecraft:on_placed": {
+                "event": "exnihilo:spawn_entity"
+            },
+            "minecraft:queued_ticking": {
+                "interval_range": [
+                    2,
+                    2
+                ],
+                "looping": true,
+                "on_tick": {
+                    "event": "exnihilo:on_tick"
+                }
+            }
+        },
+        "events": {
+            "exnihilo:idle": {},
+            "exnihilo:composting_particle": {
+                "randomize": [
+                    {
+                        "weight": 33,
+                        "run_command": {
+                            "command": "/execute positioned ~0.05 ~0.7 ~ run function barrel_composting_particle/1"
+                        }
+                    },
+                    {
+                        "weight": 33,
+                        "run_command": {
+                            "command": "/execute positioned ~ ~0.7 ~-0.075 run function barrel_composting_particle/2"
+                        }
+                    },
+                    {
+                        "weight": 33,
+                        "run_command": {
+                            "command": "/execute positioned ~0.06 ~0.7 ~-0.08 run function barrel_composting_particle/3"
+                        }
+                    }
+                ]
+            },
+            "exnihilo:on_tick": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('exnihilo:mode') == 1 && q.block_property('exnihilo:type') == 1",
+                        "run_command": {
+                            "command": [
+                                "/scriptevent exnihilo:barrel_trigger tryTransformWaterToCobblestone"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('exnihilo:mode') == 1 && q.block_property('exnihilo:type') == 2",
+                        "run_command": {
+                            "command": [
+                                "/scriptevent exnihilo:barrel_trigger tryTransformLavaToObsidian"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "exnihilo:spawn_entity": {
+                "run_command": {
+                    "command": "/execute positioned ~ ~ ~ run execute unless entity @e[type=exnihilo:barrel, c=1, r=0.5] run summon exnihilo:barrel"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('exnihilo:mode') == 3 && q.block_property('exnihilo:stage_alpha') == 7 && q.block_property('exnihilo:stage_beta') == 7",
+                "components": {
+                    "minecraft:queued_ticking": {
+                        "interval_range": [
+                            4,
+                            12
+                        ],
+                        "looping": true,
+                        "on_tick": {
+                            "event": "exnihilo:composting_particle"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 1 && query.block_property('exnihilo:type') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side",
+                            "render_method": "blend"
+                        },
+                        "east": {
+                            "texture": "water65",
+                            "render_method": "blend"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top",
+                            "render_method": "blend"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 1 && query.block_property('exnihilo:type') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "still_lava"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    },
+                    "minecraft:light_emission": 15
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 2 && query.block_property('exnihilo:type') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "dirt"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 2 && query.block_property('exnihilo:type') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "clay"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 2 && query.block_property('exnihilo:type') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "cobblestone"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 2 && query.block_property('exnihilo:type') == 4",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "obsidian"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 2 && query.block_property('exnihilo:type') == 5",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "netherrack"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 2 && query.block_property('exnihilo:type') == 6",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side"
+                        },
+                        "east": {
+                            "texture": "end_stone"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('exnihilo:mode') == 3 && query.block_property('exnihilo:type') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "barrel_warped_side",
+                            "render_method": "alpha_test"
+                        },
+                        "east": {
+                            "texture": "leaves_oak",
+                            "render_method": "alpha_test"
+                        },
+                        "up": {
+                            "texture": "barrel_warped_top",
+                            "render_method": "alpha_test"
+                        },
+                        "down": {
+                            "texture": "barrel_warped_bottom",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

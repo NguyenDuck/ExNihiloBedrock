@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"NguyenDuck"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"header": {
+		"name": "Ex Nihilo: Bedrock",
+		"description": "Included in tree",
+		"min_engine_version": [
+			1,
+			19,
+			70
+		],
+		"uuid": "896ff834-e66c-4373-ac72-7a66f3755ea4",
+		"version": [
+			1,
+			0,
+			4
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "ea6429d0-26fc-405b-9baf-b4a7e73006d2",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

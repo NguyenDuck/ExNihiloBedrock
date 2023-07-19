@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "exnihilo:pebble_diorite"
+        },
+        "group": "exnihilo.pebble",
+        "ingredients": [
+            {
+                "item": "stone",
+                "count": 1,
+                "data": 3
+            }
+        ],
+        "tags": ["crafting_table"],
+        "result": {
+            "item": "exnihilo:pebble_diorite",
+            "count": 4
+        }
+    }
+}

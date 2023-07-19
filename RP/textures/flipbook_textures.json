@@ -1,0 +1,19 @@
+[
+    {
+        "flipbook_texture": "textures/blocks/water_flow_65",
+        "atlas_tile": "fluid_flow",
+        "replicate": 2
+    },
+    {
+        "flipbook_texture": "textures/blocks/water_still_65",
+        "ticks_per_frame": 2,
+        "atlas_tile": "water65",
+        "blend_frames": true
+    },
+    {
+        "flipbook_texture": "textures/blocks/fluid_still",
+        "ticks_per_frame": 2,
+        "atlas_tile": "fluid_still",
+        "blend_frames": true
+    }
+]

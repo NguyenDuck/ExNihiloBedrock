@@ -1,0 +1,18 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cocoa_beans",
+                    "weight": 3
+                },
+                {
+                    "type": "empty",
+                    "weight": 97
+                }
+            ]
+        }
+    ]
+}

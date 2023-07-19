@@ -1,0 +1,27 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:crushed_end_stone",
+			"menu_category": {
+				"category": "construction",
+				"group": "construction"
+			}
+		},
+		"components": {
+			"minecraft:unit_cube": {},
+			"minecraft:light_dampening": 15,
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "crushed_end_stone"
+				}
+			}
+		}
+	}
+}

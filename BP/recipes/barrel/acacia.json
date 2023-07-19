@@ -1,0 +1,30 @@
+{
+    "format_version": "1.19.60",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:barrel_acacia"
+        },
+        "group": "exnihilo.barrel",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "p p",
+            "p p",
+            "psp"
+        ],
+        "key": {
+            "p": {
+                "item": "planks",
+                "data": 4
+            },
+            "s": {
+                "item": "wooden_slab",
+                "data": 4
+            }
+        },
+        "result": {
+            "item": "exnihilo:barrel_acacia"
+        }
+    }
+}

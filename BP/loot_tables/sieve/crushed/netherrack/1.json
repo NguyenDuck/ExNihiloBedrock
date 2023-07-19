@@ -1,0 +1,64 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_netherrack",
+                    "weight": 10
+                },
+                {
+                    "type": "empty",
+                    "weight": 90
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:pebble_netherrack",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:spore_nylium_warped",
+                    "weight": 5
+                },
+                {
+                    "type": "empty",
+                    "weight": 95
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "exnihilo:spore_nylium_crimson",
+                    "weight": 5
+                },
+                {
+                    "type": "empty",
+                    "weight": 95
+                }
+            ]
+        }
+    ]
+}

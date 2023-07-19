@@ -1,0 +1,27 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:seeds_grass"
+        },
+        "components": {
+            "tag:exnihilo:seed": {},
+            "tag:minecraft:seed": {},
+            "tag:minecraft:grass": {},
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:icon": {
+                "texture": "seeds_grass"
+            },
+            "minecraft:on_use_on": {
+                "on_use_on": {
+                    "event": "exnihilo:idle"
+                }
+            }
+        },
+        "events": {
+            "exnihilo:idle": {}
+        }
+    }
+}

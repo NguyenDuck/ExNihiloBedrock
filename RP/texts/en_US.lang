@@ -1,0 +1,166 @@
+exnihilo=Exnihilo Bedrock
+
+tile.exnihilo:mesh_diamond.name=Diamond Stiffened Mesh
+tile.exnihilo:mesh_emerald.name=Emerald Stiffened Mesh
+tile.exnihilo:mesh_flint.name=Flint Stiffened Mesh
+tile.exnihilo:mesh_iron.name=Iron Stiffened Mesh
+tile.exnihilo:mesh_netherite.name=Netherite Stiffened Mesh
+tile.exnihilo:mesh_string.name=String Mesh
+
+item.exnihilo:hammer_andesite=Andesite Hammer
+item.exnihilo:hammer_basalt=Basalt Hammer
+item.exnihilo:hammer_blackstone=Blackstone Hammer
+item.exnihilo:hammer_bone=Bone Hammer
+item.exnihilo:hammer_calcite=Calcite Hammer
+item.exnihilo:hammer_copper=Copper Hammer
+item.exnihilo:hammer_dark_prismarine=Dark Prismarine Hammer
+item.exnihilo:hammer_deepslate=Deepslate Hammer
+item.exnihilo:hammer_diamond=Diamond Hammer
+item.exnihilo:hammer_diorite=Diorite Hammer
+item.exnihilo:hammer_dripstone=Dripstone Hammer
+item.exnihilo:hammer_golden=Golden Hammer
+item.exnihilo:hammer_granite=Granite Hammer
+item.exnihilo:hammer_iron=Iron Hammer
+item.exnihilo:hammer_nether_brick=Nether Brick Hammer
+item.exnihilo:hammer_netherite=Netherite Hammer
+item.exnihilo:hammer_prismarine=Prismarine Hammer
+item.exnihilo:hammer_red_nether_brick=Red Nether Brick Hammer
+item.exnihilo:hammer_stone=Stone Hammer
+item.exnihilo:hammer_terracotta=Terracotta Hammer
+item.exnihilo:hammer_tuff=Tuff Hammer
+item.exnihilo:hammer_wooden=Wooden Hammer
+
+tile.exnihilo:sieve_acacia.name=Acacia Sieve
+tile.exnihilo:sieve_birch.name=Birch Sieve
+tile.exnihilo:sieve_crimson.name=Crimson Sieve
+tile.exnihilo:sieve_dark_oak.name=Dark Oak Sieve
+tile.exnihilo:sieve_jungle.name=Jungle Sieve
+tile.exnihilo:sieve_mangrove.name=Mangrove Sieve
+tile.exnihilo:sieve_oak.name=Oak Sieve
+tile.exnihilo:sieve_spruce.name=Spruce Sieve
+tile.exnihilo:sieve_warped.name=Warped Sieve
+
+tile.exnihilo:dust.name=Dust
+
+tile.exnihilo:crushed_end_stone.name=Crushed End Stone
+tile.exnihilo:crushed_netherrack.name=Crushed Netherrack
+
+item.exnihilo:pebble_andesite=Andesite Pebble
+item.exnihilo:pebble_basalt=Basalt Pebble
+item.exnihilo:pebble_blackstone=Blackstone Pebble
+item.exnihilo:pebble_calcite=Calcite Pebble
+item.exnihilo:pebble_deepslate=Deepslate Pebble
+item.exnihilo:pebble_diorite=Diorite Pebble
+item.exnihilo:pebble_dripstone=Dripstone Pebble
+item.exnihilo:pebble_end_stone=End Stone Pebble
+item.exnihilo:pebble_granite=Granite Pebble
+item.exnihilo:pebble_netherrack=Netherrack Pebble
+item.exnihilo:pebble_stone=Stone Pebble
+item.exnihilo:pebble_tuff=Tuff Pebble
+
+item.exnihilo:spore_mycelium=Mycelium Spores
+item.exnihilo:spore_nylium_crimson=Crimson Nylium Spores
+item.exnihilo:spore_nylium_warped=Warped Nylium Spores
+
+item.exnihilo:seeds_grass=Grass Seeds
+
+item.exnihilo:silkworm=Silkworm
+item.exnihilo:cooked_silkworm=Cooked Silkworm
+
+item.exnihilo:crook_andesite=Andesite Crook
+item.exnihilo:crook_bone=Bone Crook
+item.exnihilo:crook_diamond=Diamond Crook
+item.exnihilo:crook_diorite=Diorite Crook
+item.exnihilo:crook_golden=Golden Crook
+item.exnihilo:crook_granite=Granite Crook
+item.exnihilo:crook_iron=Iron Crook
+item.exnihilo:crook_netherite=Netherite Crook
+item.exnihilo:crook_stone=Stone Crook
+item.exnihilo:crook_tuff=Tuff Crook
+item.exnihilo:crook_wooden=Wooden Crook
+
+item.exnihilo:doll_bee=Buzzing Doll
+item.exnihilo:doll_blaze=Blazing Doll
+item.exnihilo:doll_enderman=Creeping Doll
+item.exnihilo:doll_guardian=Protecting Doll
+item.exnihilo:doll_porcelain=Porcelain Doll
+item.exnihilo:doll_shulker=Floating Doll
+
+item.exnihilo:ore_piece_iron=Iron Ore Pieces
+item.exnihilo:ore_piece_gold=Gold Ore Pieces
+item.exnihilo:ore_piece_copper=Copper Ore Pieces
+item.exnihilo:ore_piece_tin=Tin Ore Pieces
+item.exnihilo:ore_piece_silver=Silver Ore Pieces
+item.exnihilo:ore_piece_nickel=Nickel Ore Pieces
+item.exnihilo:ore_piece_lead=Lead Ore Pieces
+item.exnihilo:ore_piece_aluminum=Aluminum Ore Pieces
+item.exnihilo:ore_piece_platinum=Platinum Ore Pieces
+item.exnihilo:ore_piece_uranium=Uranium Ore Pieces
+item.exnihilo:ore_piece_zinc=Zinc Ore Pieces
+
+item.exnihilo:ore_ingot_tin=Tin Ingot
+item.exnihilo:ore_ingot_silver=Silver Ingot
+item.exnihilo:ore_ingot_nickel=Nickel Ingot
+item.exnihilo:ore_ingot_lead=Lead Ingot
+item.exnihilo:ore_ingot_aluminum=Aluminum Ingot
+item.exnihilo:ore_ingot_platinum=Platinum Ingot
+item.exnihilo:ore_ingot_uranium=Uranium Ingot
+item.exnihilo:ore_ingot_zinc=Zinc Ingot
+
+item.exnihilo:ore_nugget_copper=Copper Nugget
+item.exnihilo:ore_nugget_tin=Tin Nugget
+item.exnihilo:ore_nugget_silver=Silver Nugget
+item.exnihilo:ore_nugget_nickel=Nickel Nugget
+item.exnihilo:ore_nugget_lead=Lead Nugget
+item.exnihilo:ore_nugget_aluminum=Aluminum Nugget
+item.exnihilo:ore_nugget_platinum=Platinum Nugget
+item.exnihilo:ore_nugget_uranium=Uranium Nugget
+item.exnihilo:ore_nugget_zinc=Zinc Nugget
+
+item.exnihilo:ore_raw_tin=Raw Tin
+item.exnihilo:ore_raw_silver=Raw Silver
+item.exnihilo:ore_raw_nickel=Raw Nickel
+item.exnihilo:ore_raw_lead=Raw Lead
+item.exnihilo:ore_raw_aluminum=Raw Aluminum
+item.exnihilo:ore_raw_platinum=Raw Platinum
+item.exnihilo:ore_raw_uranium=Raw Uranium
+item.exnihilo:ore_raw_zinc=Raw Zinc
+
+tile.exnihilo:infested_leaves_acacia.name=Infested Acacia Leaves
+tile.exnihilo:infested_leaves_birch.name=Infested Birch Leaves
+tile.exnihilo:infested_leaves_dark_oak.name=Infested Dark Oak Leaves
+tile.exnihilo:infested_leaves_jungle.name=Infested Jungle Leaves
+tile.exnihilo:infested_leaves_oak.name=Infested Oak Leaves
+tile.exnihilo:infested_leaves_spruce.name=Infested Spruce Leaves
+
+tile.exnihilo:infesting_leaves_acacia.name=Infesting Acacia Leaves
+tile.exnihilo:infesting_leaves_birch.name=Infesting Birch Leaves
+tile.exnihilo:infesting_leaves_dark_oak.name=Infesting Dark Oak Leaves
+tile.exnihilo:infesting_leaves_jungle.name=Infesting Jungle Leaves
+tile.exnihilo:infesting_leaves_oak.name=Infesting Oak Leaves
+tile.exnihilo:infesting_leaves_spruce.name=Infesting Spruce Leaves
+
+tile.exnihilo:barrel_oak.name=Oak Barrel
+tile.exnihilo:barrel_spruce.name=Spruce Barrel
+tile.exnihilo:barrel_birch.name=Birch Barrel
+tile.exnihilo:barrel_jungle.name=Jungle Barrel
+tile.exnihilo:barrel_dark_oak.name=Dark Oak Barrel
+tile.exnihilo:barrel_acacia.name=Acacia Barrel
+tile.exnihilo:barrel_mangrove.name=Mangrove Barrel
+tile.exnihilo:barrel_warped.name=Warped Barrel
+tile.exnihilo:barrel_crimson.name=Crimson Barrel
+tile.exnihilo:barrel_stone.name=Stone Barrel
+
+tile.exnihilo:crucible_oak.name=Oak Crucible
+tile.exnihilo:crucible_spruce.name=Spruce Crucible
+tile.exnihilo:crucible_birch.name=Birch Crucible
+tile.exnihilo:crucible_jungle.name=Jungle Crucible
+tile.exnihilo:crucible_dark_oak.name=Dark Oak Crucible
+tile.exnihilo:crucible_acacia.name=Acacia Crucible
+tile.exnihilo:crucible_mangrove.name=Mangrove Crucible
+tile.exnihilo:crucible_warped.name=Warped Crucible
+tile.exnihilo:crucible_crimson.name=Crimson Crucible
+tile.exnihilo:crucible_fired.name=Fired Crucible
+tile.exnihilo:crucible_unfired.name=Unfired Crucible
+
+item.exnihilo:porcelain_clay=Porcelain Clay

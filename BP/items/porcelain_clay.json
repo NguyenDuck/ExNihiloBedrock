@@ -1,0 +1,17 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "exnihilo:porcelain_clay"
+        },
+        "components": {
+            "tag:exnihilo:porcelain_clay": {},
+            "minecraft:creative_category": {
+                "category": "items"
+            },
+            "minecraft:icon": {
+                "texture": "porcelain_clay"
+            }
+        }
+    }
+}

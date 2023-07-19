@@ -1,0 +1,41 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:block": {
+        "description": {
+            "identifier": "exnihilo:infested_leaves_jungle",
+            "menu_category": {
+                "category": "nature",
+                "group": "nature"
+            }
+        },
+        "components": {
+            "tag:exnihilo:infest_leaves": {},
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:light_dampening": 5,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.2
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "blend",
+                    "texture": "infested_jungle"
+                }
+            },
+            "minecraft:flammable": {
+                "destroy_chance_modifier": 30,
+                "catch_chance_modifier": 10
+            }
+        },
+        "events": {
+            "exnihilo:decay": {
+                "set_block": {
+                    "block_type": "air"
+                }
+            }
+        }
+    }
+}

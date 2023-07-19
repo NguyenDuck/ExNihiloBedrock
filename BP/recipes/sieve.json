@@ -1,0 +1,31 @@
+{
+    "format_version": "1.19.70",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:sieve"
+        },
+        "group": "exnihilo.sieve",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "p p",
+            "psp",
+            "S S"
+        ],
+        "key": {
+            "S": {
+                "item": "stick"
+            },
+            "p": {
+                "item": "planks"
+            },
+            "s": {
+                "item": "wooden_slab"
+            }
+        },
+        "result": {
+            "item": "exnihilo:sieve"
+        }
+    }
+}

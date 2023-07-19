@@ -1,0 +1,28 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:hammer_wooden"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " M ",
+            " SM",
+            "S  "
+        ],
+        "key": {
+            "M": {
+                "item": "planks"
+            },
+            "S": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "exnihilo:hammer_wooden",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:pebble_combined_to_cobblestone"
+        },
+        "group": "exnihilo.pebble.combined",
+        "pattern": [
+            "**",
+            "**"
+        ],
+        "key": {
+            "*": {
+                "item": "exnihilo:pebble_stone"
+            }
+        },
+        "tags": ["crafting_table"],
+        "result": {
+            "item": "cobblestone",
+            "count": 1
+        }
+    }
+}

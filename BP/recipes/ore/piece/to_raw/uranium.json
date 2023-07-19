@@ -1,0 +1,24 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:ore_piece_to_raw_uranium"
+        },
+        "group": "exnihilo.ore.piece.combined",
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "**",
+            "**"
+        ],
+        "key": {
+            "*": {
+                "item": "exnihilo:ore_piece_uranium"
+            }
+        },
+        "result": {
+            "item": "exnihilo:ore_raw_uranium"
+        }
+    }
+}

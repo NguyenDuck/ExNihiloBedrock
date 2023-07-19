@@ -1,0 +1,143 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "exnihilo:sieve",
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.name.exnihilo.sieve"
+            }
+        },
+        "components": {
+            "exnihilo:sieve": {
+                "material_list": [
+                    "dirt",
+                    "gravel",
+                    "leaves",
+                    "sand",
+                    "soul_sand",
+                    "crushed_netherrack",
+                    "crushed_end_stone",
+                    "dust"
+                ],
+                "mesh_list": [
+                    "string",
+                    "flint",
+                    "iron",
+                    "diamond",
+                    "emerald",
+                    "netherite"
+                ],
+                "textures": {
+                    "frame": "stripped_oak_log_side",
+                    "material": {
+                        "dirt": {
+                            "normal": "dirt",
+                            "coarse": "coarse_dirt"
+                        },
+                        "leaves": {
+                            "oak": "leaves_oak",
+                            "spruce": "leaves_spruce",
+                            "birch": "leaves_birch",
+                            "jungle": "leaves_jungle",
+                            "dark_oak": "leaves_dark_oak",
+                            "acacia": "leaves_acacia",
+                            "mangrove": "leaves_mangrove"
+                        }
+                    },
+                    "mesh": {
+                        "string": "mesh_string",
+                        "flint": "mesh_flint",
+                        "iron": "mesh_iron",
+                        "diamond": "mesh_diamond",
+                        "emerald": "mesh_emerald",
+                        "netherite": "mesh_netherite"
+                    }
+                },
+                "type_data": {
+                    "dirt": [
+                        "normal",
+                        "coarse"
+                    ],
+                    "leaves": [
+                        "oak",
+                        "spruce",
+                        "birch",
+                        "jungle",
+                        "dark_oak",
+                        "acacia"
+                    ]
+                },
+                "mesh_table": {
+                    "string": [
+                        "dirt",
+                        "gravel",
+                        "leaves",
+                        "sand",
+                        "soul_sand",
+                        "crushed_netherrack",
+                        "crushed_end_stone",
+                        "dust"
+                    ],
+                    "flint": [
+                        "dirt",
+                        "gravel",
+                        "leaves",
+                        "sand",
+                        "soul_sand",
+                        "crushed_netherrack",
+                        "crushed_end_stone",
+                        "dust"
+                    ],
+                    "iron": [
+                        "dirt",
+                        "gravel",
+                        "leaves",
+                        "sand",
+                        "soul_sand",
+                        "crushed_netherrack",
+                        "crushed_end_stone",
+                        "dust"
+                    ],
+                    "diamond": [
+                        "dirt",
+                        "gravel",
+                        "leaves",
+                        "sand",
+                        "soul_sand",
+                        "crushed_netherrack",
+                        "crushed_end_stone",
+                        "dust"
+                    ],
+                    "emerald": [
+                        "dirt",
+                        "gravel",
+                        "leaves",
+                        "sand",
+                        "soul_sand",
+                        "crushed_netherrack",
+                        "crushed_end_stone",
+                        "dust"
+                    ],
+                    "netherite": [
+                        "dirt",
+                        "gravel",
+                        "leaves",
+                        "sand",
+                        "soul_sand",
+                        "crushed_netherrack",
+                        "crushed_end_stone",
+                        "dust"
+                    ]
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            }
+        },
+        "permutations": []
+    }
+}
