@@ -1,5 +1,5 @@
 {
-    "format_version": "1.19.60",
+    "format_version": "1.20.10",
     "minecraft:block": {
         "description": {
             "identifier": "exnihilo:crucible_oak",
@@ -7,7 +7,7 @@
                 "category": "items",
                 "group": "items"
             },
-            "properties": {
+            "states": {
                 "exnihilo:fluid_stage_alpha": [
                     0,
                     1,
@@ -52,9 +52,9 @@
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 3
             },
-            "minecraft:geometry": "geometry.crucible",
-            "minecraft:part_visibility": {
-                "conditions": {
+            "minecraft:geometry": {
+                "identifier": "geometry.crucible",
+                "bone_visibility": {
                     "water_8": "q.block_property('exnihilo:fluid_stage_beta') == 0 && q.block_property('exnihilo:fluid_stage_alpha') == 1",
                     "water_40": "q.block_property('exnihilo:fluid_stage_beta') == 0 && q.block_property('exnihilo:fluid_stage_alpha') == 2",
                     "water_72": "q.block_property('exnihilo:fluid_stage_beta') == 0 && q.block_property('exnihilo:fluid_stage_alpha') == 3",

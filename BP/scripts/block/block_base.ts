@@ -74,4 +74,17 @@ export default class BlockBase {
         }
         return true;
     }
+
+    public getBlockState(state: string) {
+        return this.permutation.getState(state)
+    }
+
+    public hasBlockState(states: { [name: string]: string | number | boolean }) {
+        for (let state in states) {
+            let matchVal = states[state]
+            let value = this.getBlockState(state)
+            if (value == null || value != matchVal) return false
+        }
+        return true
+    }
 }

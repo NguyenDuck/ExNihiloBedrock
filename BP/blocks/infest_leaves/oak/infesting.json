@@ -8,7 +8,7 @@
                 "group": "none",
                 "is_hidden_in_commands": true
             },
-            "properties": {
+            "states": {
                 "exnihilo:infest_stage_alpha": [
                     0,
                     1,
@@ -38,6 +38,7 @@
             }
         },
         "components": {
+            "exnihilo:not_giveable_block": {},
             "tag:exnihilo:infest_leaves": {},
             "minecraft:loot": "loot_tables/empty.json",
             "minecraft:light_dampening": 5,

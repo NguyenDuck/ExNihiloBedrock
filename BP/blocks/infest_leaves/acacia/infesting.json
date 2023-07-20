@@ -7,7 +7,7 @@
                 "category": "none",
                 "group": "none"
             },
-            "properties": {
+            "states": {
                 "exnihilo:infest_stage_alpha": [
                     0,
                     1,
@@ -37,6 +37,7 @@
             }
         },
         "components": {
+            "exnihilo:not_giveable_block": {},
             "tag:exnihilo:infest_leaves": {},
             "minecraft:loot": "loot_tables/empty.json",
             "minecraft:light_dampening": 5,
@@ -72,38 +73,33 @@
             "exnihilo:update_infested_stage": {
                 "sequence": [
                     {
-                        "condition": "query.block_property('exnihilo:infest_stage_alpha') < 10",
+                        "condition": "q.block_property('exnihilo:infest_stage_alpha') < 10",
                         "sequence": [
                             {
-                                "condition": "query.block_property('exnihilo:infest_stage_beta') < 10",
+                                "condition": "q.block_property('exnihilo:infest_stage_beta') < 10",
                                 "set_block_property": {
-                                    "exnihilo:infest_stage_beta": "query.block_property('exnihilo:infest_stage_beta') + 1"
+                                    "exnihilo:infest_stage_beta": "q.block_property('exnihilo:infest_stage_beta') + 1"
                                 }
                             },
                             {
-                                "condition": "query.block_property('exnihilo:infest_stage_beta') == 10",
+                                "condition": "q.block_property('exnihilo:infest_stage_beta') == 10",
                                 "set_block_property": {
-                                    "exnihilo:infest_stage_alpha": "query.block_property('exnihilo:infest_stage_alpha') + 1",
+                                    "exnihilo:infest_stage_alpha": "q.block_property('exnihilo:infest_stage_alpha') + 1",
                                     "exnihilo:infest_stage_beta": 0
                                 },
                                 "run_command": {
-                                    "command": "/function infesting_leaves_spread/all"
+                                    "command": "/scriptevent exnihilo:infesting_leaves_spread"
                                 }
                             }
                         ]
                     },
                     {
-                        "condition": "query.block_property('exnihilo:infest_stage_alpha') == 10",
+                        "condition": "q.block_property('exnihilo:infest_stage_alpha') == 10",
                         "set_block": {
                             "block_type": "exnihilo:infested_leaves_acacia"
                         }
                     }
                 ]
-            },
-            "exnihilo:decay": {
-                "set_block": {
-                    "block_type": "air"
-                }
             }
         }
     }

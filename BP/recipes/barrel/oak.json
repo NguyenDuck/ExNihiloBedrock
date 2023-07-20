@@ -1,5 +1,5 @@
-	{
-    "format_version": "1.19.60",
+{
+    "format_version": "1.19.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "exnihilo:barrel_oak"
@@ -15,8 +15,7 @@
         ],
         "key": {
             "p": {
-                "item": "planks",
-                "data": 0
+                "item": "planks"
             },
             "s": {
                 "item": "wooden_slab",
