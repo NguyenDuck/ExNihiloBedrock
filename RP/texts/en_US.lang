@@ -30,15 +30,7 @@ item.exnihilo:hammer_terracotta=Terracotta Hammer
 item.exnihilo:hammer_tuff=Tuff Hammer
 item.exnihilo:hammer_wooden=Wooden Hammer
 
-tile.exnihilo:sieve_acacia.name=Acacia Sieve
-tile.exnihilo:sieve_birch.name=Birch Sieve
-tile.exnihilo:sieve_crimson.name=Crimson Sieve
-tile.exnihilo:sieve_dark_oak.name=Dark Oak Sieve
-tile.exnihilo:sieve_jungle.name=Jungle Sieve
-tile.exnihilo:sieve_mangrove.name=Mangrove Sieve
-tile.exnihilo:sieve_oak.name=Oak Sieve
-tile.exnihilo:sieve_spruce.name=Spruce Sieve
-tile.exnihilo:sieve_warped.name=Warped Sieve
+tile.exnihilo:sieve.name=Sieve
 
 tile.exnihilo:dust.name=Dust
 
@@ -141,25 +133,9 @@ tile.exnihilo:infesting_leaves_oak.name=Infesting Oak Leaves
 tile.exnihilo:infesting_leaves_spruce.name=Infesting Spruce Leaves
 
 tile.exnihilo:barrel_oak.name=Oak Barrel
-tile.exnihilo:barrel_spruce.name=Spruce Barrel
-tile.exnihilo:barrel_birch.name=Birch Barrel
-tile.exnihilo:barrel_jungle.name=Jungle Barrel
-tile.exnihilo:barrel_dark_oak.name=Dark Oak Barrel
-tile.exnihilo:barrel_acacia.name=Acacia Barrel
-tile.exnihilo:barrel_mangrove.name=Mangrove Barrel
-tile.exnihilo:barrel_warped.name=Warped Barrel
-tile.exnihilo:barrel_crimson.name=Crimson Barrel
 tile.exnihilo:barrel_stone.name=Stone Barrel
 
 tile.exnihilo:crucible_oak.name=Oak Crucible
-tile.exnihilo:crucible_spruce.name=Spruce Crucible
-tile.exnihilo:crucible_birch.name=Birch Crucible
-tile.exnihilo:crucible_jungle.name=Jungle Crucible
-tile.exnihilo:crucible_dark_oak.name=Dark Oak Crucible
-tile.exnihilo:crucible_acacia.name=Acacia Crucible
-tile.exnihilo:crucible_mangrove.name=Mangrove Crucible
-tile.exnihilo:crucible_warped.name=Warped Crucible
-tile.exnihilo:crucible_crimson.name=Crimson Crucible
 tile.exnihilo:crucible_fired.name=Fired Crucible
 tile.exnihilo:crucible_unfired.name=Unfired Crucible
 
