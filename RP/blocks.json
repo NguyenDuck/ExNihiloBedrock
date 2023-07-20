@@ -7,30 +7,6 @@
 	"exnihilo:sieve_oak": {
 		"sound": "wood"
 	},
-	"exnihilo:sieve_spruce": {
-		"sound": "wood"
-	},
-	"exnihilo:sieve_birch": {
-		"sound": "wood"
-	},
-	"exnihilo:sieve_jungle": {
-		"sound": "wood"
-	},
-	"exnihilo:sieve_acacia": {
-		"sound": "wood"
-	},
-	"exnihilo:sieve_dark_oak": {
-		"sound": "wood"
-	},
-	"exnihilo:sieve_mangrove": {
-		"sound": "wood"
-	},
-	"exnihilo:sieve_crimson": {
-		"sound": "stem"
-	},
-	"exnihilo:sieve_warped": {
-		"sound": "stem"
-	},
 	"exnihilo:dust": {
 		"isotropic": true,
 		"sound": "sand"
@@ -93,55 +69,7 @@
 	"exnihilo:barrel_oak": {
 		"sound": "wood"
 	},
-	"exnihilo:barrel_birch": {
-		"sound": "wood"
-	},
-	"exnihilo:barrel_spruce": {
-		"sound": "wood"
-	},
-	"exnihilo:barrel_jungle": {
-		"sound": "wood"
-	},
-	"exnihilo:barrel_dark_oak": {
-		"sound": "wood"
-	},
-	"exnihilo:barrel_acacia": {
-		"sound": "wood"
-	},
-	"exnihilo:barrel_mangrove": {
-		"sound": "wood"
-	},
-	"exnihilo:barrel_warped": {
-		"sound": "stem"
-	},
-	"exnihilo:barrel_crimson": {
-		"sound": "stem"
-	},
 	"exnihilo:crucible_oak": {
 		"sound": "wood"
-	},
-	"exnihilo:crucible_birch": {
-		"sound": "wood"
-	},
-	"exnihilo:crucible_spruce": {
-		"sound": "wood"
-	},
-	"exnihilo:crucible_jungle": {
-		"sound": "wood"
-	},
-	"exnihilo:crucible_dark_oak": {
-		"sound": "wood"
-	},
-	"exnihilo:crucible_acacia": {
-		"sound": "wood"
-	},
-	"exnihilo:crucible_mangrove": {
-		"sound": "wood"
-	},
-	"exnihilo:crucible_warped": {
-		"sound": "stem"
-	},
-	"exnihilo:crucible_crimson": {
-		"sound": "stem"
 	}
 }
