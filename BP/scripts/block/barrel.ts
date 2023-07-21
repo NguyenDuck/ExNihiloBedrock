@@ -18,7 +18,8 @@ import {
     getEntityInventory,
     splitNamespace,
     logerr,
-    clearInventory
+    clearInventory,
+    catchf
 } from "../utils";
 import BarrelEntity from "../entity/barrel";
 import BlockBase from "./block_base";
@@ -34,33 +35,32 @@ export default class Barrel extends BlockEntity {
         BlockBase.setNonPushable(Barrel.NAMESPACE);
 
         world.afterEvents.itemUseOn.subscribe(({ source, block, itemStack }) => {
-            if (source.isSneaking) return;
-            if (block.hasTag(Barrel.NAMESPACE)) new Barrel(block).onInteract(itemStack, source);
+            if (source.isSneaking) return
+            if (block.hasTag(Barrel.NAMESPACE)) catchf(() => new Barrel(block).onInteract(itemStack, source))
         })
 
         system.runInterval(() => {
-            let scoreboard = world.scoreboard.getObjective(scName);
-            if (!scoreboard) return;
-            scoreboard.getParticipants().forEach(identity => {
-                try {
-                    let entity = identity.getEntity();
-                    (({ x, y, z }) => {
-                        let block = entity.dimension.getBlock({ x: x, y: y - 1, z: z });
-                        let barrel = new Barrel(block, entity);
+            let scoreboard = world.scoreboard.getObjective(scName)
+            if (!scoreboard) return
+            let e = scoreboard.getParticipants()
+            for (let i of e) {
+                (async () => {
+                    let entity = i.getEntity();
+                    let block = entity.dimension.getBlock(entity.location);
+                    let barrel = new Barrel(block, entity);
 
-                        if (!barrel.isFull()) {
-                            if (barrel.isRaining() && barrel.isWaterDropable()) {
-                                if (barrel.isEmpty()) {
-                                    barrel.setFluidWater();
-                                    barrel.addStage(1);
-                                } else if (barrel.isFluidWater()) {
-                                    barrel.addStage(1);
-                                }
+                    if (!barrel.isFull()) {
+                        if (barrel.isRaining() && barrel.isWaterDropable()) {
+                            if (barrel.isEmpty()) {
+                                barrel.setFluidWater();
+                                barrel.addStage(1);
+                            } else if (barrel.isFluidWater()) {
+                                barrel.addStage(1);
                             }
                         }
-                    }).call(this, entity.location);
-                } catch (e) { }
-            })
+                    }
+                }).call(this)
+            }
         }, 2)
 
         system.afterEvents.scriptEventReceive.subscribe(({ id, message, sourceEntity, sourceBlock }) => {
@@ -99,9 +99,9 @@ export default class Barrel extends BlockEntity {
         }, { namespaces: ["exnihilo"] })
     }
 
-    constructor(block: Block, entity: Entity = undefined) {
-        super(block);
-        this.blockEntity = new BarrelEntity(block, entity);
+    constructor(block: Block, entity?: Entity) {
+        super(block)
+        this.blockEntity = new BarrelEntity(block, entity)
     }
 
     public onInteract(item: ItemStack, source: Entity) {
@@ -547,9 +547,9 @@ export default class Barrel extends BlockEntity {
     }
 
     public isRaining(): boolean {
-        let c = this.blockEntity.entity.getComponent(EntityMarkVariantComponent.componentId);
-        // @ts-ignored
-        return Boolean(c.value);
+        let c = this.blockEntity.entity.getComponent(EntityMarkVariantComponent.componentId) as EntityMarkVariantComponent
+        if (c) return Boolean(c.value)
+        return false
     }
 
     public isWaterDropable(): boolean {

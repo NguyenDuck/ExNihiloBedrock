@@ -1,14 +1,20 @@
-// 1.20.0
-import { Entity, Block } from '@minecraft/server';
+// 1.20.10
+import { Entity, Block, world, Vector } from '@minecraft/server'
+import { locationToString } from '../utils'
 
 export default class EntityBase {
-    public entity: Entity;
+    public entity: Entity
 
-    constructor(block: Block, entity: Entity = undefined) {
-        if (!entity) this.entity = (() => {
-            let entities = block.dimension.getEntitiesAtBlockLocation(block.location);
-            for (let e of entities) if (e.typeId == block.typeId) return e;
-        }).call(this);
-        else this.entity = entity;
+    constructor(block: Block, entity?: Entity) {
+        this.entity = entity
+        if (!this.entity) {
+            let entities = block.dimension.getEntitiesAtBlockLocation(Vector.add(block.location, Vector.up))
+            for (let e of entities) {
+                if (block.hasTag(e.typeId)) {
+                    this.entity = e
+                    break
+                }
+            }
+        }
     }
 }
