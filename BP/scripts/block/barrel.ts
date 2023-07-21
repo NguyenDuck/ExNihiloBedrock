@@ -9,9 +9,11 @@ import {
     EntityMarkVariantComponent,
     system,
     Vector,
-    Player
-} from "@minecraft/server";
-import BlockEntity from "./block_entity";
+    Player,
+    Vector3,
+    MinecraftDimensionTypes
+} from "@minecraft/server"
+import BlockEntity from "./block_entity"
 import {
     playSoundAt,
     prefix,
@@ -20,19 +22,19 @@ import {
     logerr,
     clearInventory,
     catchf
-} from "../utils";
-import BarrelEntity from "../entity/barrel";
-import BlockBase from "./block_base";
+} from "../utils"
+import BarrelEntity from "../entity/barrel"
+import BlockBase from "./block_base"
 
-const scName = "en:bc";
+const scName = "en:bc"
 
 export default class Barrel extends BlockEntity {
-    static readonly NAMESPACE = prefix("barrel");
+    static readonly NAMESPACE = prefix("barrel")
 
-    declare public blockEntity: BarrelEntity;
+    declare public blockEntity: BarrelEntity
 
     static Registry(): void {
-        BlockBase.setNonPushable(Barrel.NAMESPACE);
+        BlockBase.setNonPushable(Barrel.NAMESPACE)
 
         world.afterEvents.itemUseOn.subscribe(({ source, block, itemStack }) => {
             if (source.isSneaking) return
@@ -45,17 +47,17 @@ export default class Barrel extends BlockEntity {
             let e = scoreboard.getParticipants()
             for (let i of e) {
                 (async () => {
-                    let entity = i.getEntity();
-                    let block = entity.dimension.getBlock(entity.location);
-                    let barrel = new Barrel(block, entity);
+                    let entity = i.getEntity()
+                    let block = entity.dimension.getBlock(entity.location)
+                    let barrel = new Barrel(block, entity)
 
                     if (!barrel.isFull()) {
                         if (barrel.isRaining() && barrel.isWaterDropable()) {
                             if (barrel.isEmpty()) {
-                                barrel.setFluidWater();
-                                barrel.addStage(1);
+                                barrel.setFluidWater()
+                                barrel.addStage(1)
                             } else if (barrel.isFluidWater()) {
-                                barrel.addStage(1);
+                                barrel.addStage(1)
                             }
                         }
                     }
@@ -64,37 +66,37 @@ export default class Barrel extends BlockEntity {
         }, 2)
 
         system.afterEvents.scriptEventReceive.subscribe(({ id, message, sourceEntity, sourceBlock }) => {
-            if (id != prefix("barrel_trigger")) return;
+            if (id != prefix("barrel_trigger")) return
             try {
                 if (sourceEntity) switch (message) {
                     case "transformToDirt":
                         (({ x, y, z }) => {
-                            let block = sourceEntity.dimension.getBlock({ x: Math.floor(x), y: Math.floor(y), z: Math.floor(z) });
-                            if (!block.hasTag(prefix("barrel"))) return;
-                            let barrel = new Barrel(block);
-                            barrel.setBlockDirt();
-                        }).call(this, sourceEntity.location);
-                        break;
-                };
+                            let block = sourceEntity.dimension.getBlock({ x: Math.floor(x), y: Math.floor(y), z: Math.floor(z) })
+                            if (!block.hasTag(prefix("barrel"))) return
+                            let barrel = new Barrel(block)
+                            barrel.setBlockDirt()
+                        }).call(this, sourceEntity.location)
+                        break
+                }
                 if (sourceBlock) {
-                    let barrel = new Barrel(sourceBlock);
+                    let barrel = new Barrel(sourceBlock)
                     if (barrel.isFull()) {
                         switch (message) {
                             case "tryTransformWaterToCobblestone":
                                 if (barrel.isFluidWater() && barrel.isLavaOnTop()) {
-                                    barrel.setBlockCobblestone();
-                                    playSoundAt(`random.fizz`, barrel.location, barrel.dimension, { volume: 0.7, pitch: 1.9 });
+                                    barrel.setBlockCobblestone()
+                                    playSoundAt(`random.fizz`, barrel.location, barrel.dimension, { volume: 0.7, pitch: 1.9 })
                                 }
-                                break;
+                                break
                             case "tryTransformLavaToObsidian":
                                 if (barrel.isFluidLava() && barrel.isWaterOnTop()) {
-                                    barrel.setBlockObsidian();
-                                    playSoundAt(`random.fizz`, barrel.location, barrel.dimension, { volume: 0.7, pitch: 1.8 });
+                                    barrel.setBlockObsidian()
+                                    playSoundAt(`random.fizz`, barrel.location, barrel.dimension, { volume: 0.7, pitch: 1.8 })
                                 }
-                                break;
+                                break
                         }
                     }
-                };
+                }
             } catch (e) { logerr(e) }
         }, { namespaces: ["exnihilo"] })
     }
@@ -106,8 +108,8 @@ export default class Barrel extends BlockEntity {
 
     public onInteract(item: ItemStack, source: Entity) {
         if (this.isBlockMode()) {
-            this.spawnItemInBlock();
-            return;
+            this.spawnItemInBlock()
+            return
         }
 
         if (this.compost(item.typeId)) {
@@ -121,73 +123,73 @@ export default class Barrel extends BlockEntity {
         }
 
         if (this.isCompostingLeaves() && this.isFull()) {
-            let entities = this.block.dimension.getEntitiesAtBlockLocation(this.location);
+            let entities = this.block.dimension.getEntitiesAtBlockLocation(this.location)
             for (let e of entities) {
-                if (e.typeId == prefix(`barrel_composting_waiter`)) return;
+                if (e.typeId == prefix(`barrel_composting_waiter`)) return
             }
-            this.block.dimension.spawnEntity(prefix(`barrel_composting_waiter`), this.location);
+            this.block.dimension.spawnEntity(prefix(`barrel_composting_waiter`), this.location)
         }
 
         if (!this.isComposting()) {
-            let itemstack = splitNamespace(item.typeId);
+            let itemstack = splitNamespace(item.typeId)
             let callbackList = {
                 minecraft: {
                     water_bucket: () => {
-                        if (!this.isEmpty()) return;
-                        let playerInventory = getEntityInventory({ entity: source });
-                        playerInventory.addItem(new ItemStack(ItemTypes.get("bucket")));
-                        this.setFluidWater();
-                        this.setStage(1000);
-                        playSoundAt("bucket.fill_water", this.block.location, this.dimension);
-                        return true;
+                        if (!this.isEmpty()) return
+                        let playerInventory = getEntityInventory({ entity: source })
+                        playerInventory.addItem(new ItemStack(ItemTypes.get("bucket")))
+                        this.setFluidWater()
+                        this.setStage(1000)
+                        playSoundAt("bucket.fill_water", this.block.location, this.dimension)
+                        return true
                     },
                     lava_bucket: () => {
-                        if (!this.isEmpty()) return;
-                        if (this.block.hasTag(prefix("flameable"))) return;
-                        let playerInventory = getEntityInventory({ entity: source });
-                        playerInventory.addItem(new ItemStack(ItemTypes.get("bucket")));
-                        this.setFluidLava();
-                        this.setStage(1000);
-                        playSoundAt("bucket.fill_lava", this.block.location, this.dimension);
-                        return true;
+                        if (!this.isEmpty()) return
+                        if (this.block.hasTag(prefix("flameable"))) return
+                        let playerInventory = getEntityInventory({ entity: source })
+                        playerInventory.addItem(new ItemStack(ItemTypes.get("bucket")))
+                        this.setFluidLava()
+                        this.setStage(1000)
+                        playSoundAt("bucket.fill_lava", this.block.location, this.dimension)
+                        return true
                     },
                     bucket: () => {
-                        if (!this.isFluidMode() || !this.isFull()) return;
+                        if (!this.isFluidMode() || !this.isFull()) return
                         if (this.isFluidWater()) {
-                            let playerInventory = getEntityInventory({ entity: source });
-                            playerInventory.addItem(new ItemStack(ItemTypes.get("water_bucket")));
-                            this.setEmpty();
-                            playSoundAt("bucket.empty_water", this.block.location, this.dimension);
-                            return true;
+                            let playerInventory = getEntityInventory({ entity: source })
+                            playerInventory.addItem(new ItemStack(ItemTypes.get("water_bucket")))
+                            this.setEmpty()
+                            playSoundAt("bucket.empty_water", this.block.location, this.dimension)
+                            return true
                         } else if (this.isFluidLava()) {
-                            let playerInventory = getEntityInventory({ entity: source });
-                            playerInventory.addItem(new ItemStack(ItemTypes.get("lava_bucket")));
-                            this.setEmpty();
-                            playSoundAt("bucket.empty_lava", this.block.location, this.dimension);
-                            return true;
+                            let playerInventory = getEntityInventory({ entity: source })
+                            playerInventory.addItem(new ItemStack(ItemTypes.get("lava_bucket")))
+                            this.setEmpty()
+                            playSoundAt("bucket.empty_lava", this.block.location, this.dimension)
+                            return true
                         }
                     },
                     redstone: () => {
                         if (this.isFluidLava() && this.isFull()) {
-                            this.setBlockNetherrack();
-                            playSoundAt(`random.fizz`, this.location, this.dimension, { volume: 0.7, pitch: 2.1 });
-                            return true;
+                            this.setBlockNetherrack()
+                            playSoundAt(`random.fizz`, this.location, this.dimension, { volume: 0.7, pitch: 2.1 })
+                            return true
                         }
                     },
                     glowstone_dust: () => {
                         if (this.isFluidLava() && this.isFull()) {
-                            this.setBlockEndStone();
-                            playSoundAt(`random.fizz`, this.location, this.dimension, { volume: 0.7, pitch: 2.1 });
-                            return true;
+                            this.setBlockEndStone()
+                            playSoundAt(`random.fizz`, this.location, this.dimension, { volume: 0.7, pitch: 2.1 })
+                            return true
                         }
                     }
                 },
                 exnihilo: {
                     dust: () => {
                         if (this.isFluidWater() && this.isFull()) {
-                            this.setBlockClay();
-                            playSoundAt(`dig.sand`, this.location, this.dimension, { volume: 0.5, pitch: 0.7 });
-                            return true;
+                            this.setBlockClay()
+                            playSoundAt(`dig.sand`, this.location, this.dimension, { volume: 0.5, pitch: 0.7 })
+                            return true
                         }
                     }
                 }
@@ -201,15 +203,15 @@ export default class Barrel extends BlockEntity {
     }
 
     public compost(item: string): boolean {
-        let amount = 0;
+        let amount = 0
         switch (item) {
             case "exnihilo:silkworm":
             case "exnihilo:cooked_silkworm":
 
             case "minecraft:melon_slice":
             case "minecraft:string":
-                amount = 40;
-                break;
+                amount = 40
+                break
 
             case "minecraft:beetroot_seeds":
             case "minecraft:melon_seeds":
@@ -222,8 +224,8 @@ export default class Barrel extends BlockEntity {
             case "minecraft:sugar_cane":
 
             case "minecraft:spider_eye":
-                amount = 80;
-                break;
+                amount = 80
+                break
 
             case "exnihilo:spore_mycelium":
             case "exnihilo:spore_nylium_warped":
@@ -255,8 +257,8 @@ export default class Barrel extends BlockEntity {
             case "minecraft:red_flower":
             case "minecraft:yellow_flower":
             case "minecraft:wither_rose":
-                amount = 100;
-                break;
+                amount = 100
+                break
 
             case "minecraft:sapling":
             case "minecraft:mangrove_propagule":
@@ -268,8 +270,8 @@ export default class Barrel extends BlockEntity {
             case "minecraft:mangrove_leaves":
             case "minecraft:azalea_leaves":
             case "minecraft:azalea_leaves_flowered":
-                amount = 125;
-                break;
+                amount = 125
+                break
 
             case "minecraft:baked_potato":
 
@@ -280,22 +282,22 @@ export default class Barrel extends BlockEntity {
             case "minecraft:salmon":
             case "minecraft:pufferfish":
             case "minecraft:tropical_fish":
-                amount = 150;
-                break;
+                amount = 150
+                break
 
             case "minecraft:pumkin_pie":
             case "minecraft:bread":
 
-                amount = 160;
-                break;
+                amount = 160
+                break
 
             case "minecraft:melon_block":
             case "minecraft:pumkin":
             case "minecraft:carved_pumkin":
 
             case "minecraft:lit_pumkin":
-                amount = 166;
-                break;
+                amount = 166
+                break
 
             case "minecraft:cooked_chicken":
             case "minecraft:cooked_mutton":
@@ -310,197 +312,197 @@ export default class Barrel extends BlockEntity {
             case "minecraft:porkchop":
             case "minecraft:rabbit":
             case "minecraft:beef":
-                amount = 200;
-                break;
+                amount = 200
+                break
         }
         if (amount) {
             if (!this.isComposting() && this.isEmpty()) {
-                this.setCompostingLeaves();
-                this.setStage(0);
+                this.setCompostingLeaves()
+                this.setStage(0)
             }
-            this.addStage(amount);
-            return true;
+            this.addStage(amount)
+            return true
         }
     }
 
     private completeSetBlockState() {
-        if (this.isBlockMode()) this.setBlockProperties({
+        if (this.isBlockMode()) this.setBlockStates({
             stage_alpha: 7,
             stage_beta: 7
-        });
-        if (this.isEmpty()) this.setBlockProperties({
+        })
+        if (this.isEmpty()) this.setBlockStates({
             stage_alpha: 0,
             stage_beta: 0
-        });
-        this.commitSetPermutation();
+        })
+        this.commitSetPermutation()
     }
 
     public setEmpty() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 0,
             type: 0
-        });
+        })
 
-        this.setStage(0);
+        this.setStage(0)
     }
 
     public setFluidWater() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 1,
             type: 1
-        });
+        })
     }
 
     public setFluidLava() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 1,
             type: 2
-        });
+        })
     }
 
     public setBlockDirt() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 2,
             type: 1,
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public setBlockClay() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 2,
             type: 2
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public setBlockCobblestone() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 2,
             type: 3
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public setBlockObsidian() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 2,
             type: 4
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public setBlockNetherrack() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 2,
             type: 5
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public setBlockEndStone() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 2,
             type: 6
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public setCompostingLeaves() {
-        this.setBlockProperties({
+        this.setBlockStates({
             mode: 3,
             type: 1
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public isEmpty(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 0,
             type: 0
-        });
+        })
     }
 
     public isFluidWater(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 1,
             type: 1
-        });
+        })
     }
 
     public isFluidLava(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 1,
             type: 2
-        });
+        })
     }
 
     public isBlockDirt(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 2,
             type: 1
-        });
+        })
     }
 
     public isBlockClay(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 2,
             type: 2
-        });
+        })
     }
 
     public isBlockCobblestone(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 2,
             type: 3
-        });
+        })
     }
 
     public isBlockObsidian(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 2,
             type: 4
-        });
+        })
     }
 
     public isBlockNetherrack(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 2,
             type: 5
-        });
+        })
     }
 
     public isBlockEndStone(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 2,
             type: 6
-        });
+        })
     }
 
     public isCompostingLeaves(): boolean {
-        return this.hasBlockProperty({
+        return this.hasBlockStates({
             mode: 3,
             type: 1
-        });
+        })
     }
 
     public isComposting(): boolean {
-        return this.isCompostingLeaves();
+        return this.isCompostingLeaves()
     }
 
     public getStage(): number {
-        return this.blockEntity.capacity;
+        return this.blockEntity.capacity
     }
 
     public setStage(n: number) {
-        n = Math.min(n, 1000);
+        n = Math.min(n, 1000)
 
         try {
             this.blockEntity.scoreboard.setScore(this.blockEntity.entity.scoreboardIdentity, n)
@@ -509,32 +511,32 @@ export default class Barrel extends BlockEntity {
             this.blockEntity.entity.runCommandAsync(`scoreboard players set @s ${scName} ${n}`)
         }
 
-        this.blockEntity.capacity = n;
-        this.setBlockProperties({
+        this.blockEntity.capacity = n
+        this.setBlockStates({
             stage_beta: n >> 7,
             stage_alpha: n < 8 ? 0 : Math.floor(((n >> 4) | 1) % 8)
-        });
+        })
 
-        this.completeSetBlockState();
+        this.completeSetBlockState()
     }
 
     public addStage(n: number): number {
-        this.setStage(this.blockEntity.capacity + n);
-        return this.getStage();
+        this.setStage(this.blockEntity.capacity + n)
+        return this.getStage()
     }
 
     public subtractStage(n: number): number {
-        this.setStage(this.blockEntity.capacity - n);
-        return this.getStage();
+        this.setStage(this.blockEntity.capacity - n)
+        return this.getStage()
     }
 
     public isFull(): boolean {
-        return this.getStage() == 1000;
+        return this.getStage() == 1000
     }
 
     public isFluidMode(): boolean {
         return this.isFluidWater()
-            || this.isFluidLava();
+            || this.isFluidLava()
     }
 
     public isBlockMode(): boolean {
@@ -543,7 +545,7 @@ export default class Barrel extends BlockEntity {
             || this.isBlockClay()
             || this.isBlockObsidian()
             || this.isBlockNetherrack()
-            || this.isBlockEndStone();
+            || this.isBlockEndStone()
     }
 
     public isRaining(): boolean {
@@ -553,52 +555,52 @@ export default class Barrel extends BlockEntity {
     }
 
     public isWaterDropable(): boolean {
-        if (this.dimension.id == "minecraft:overworld") {
-            return (({ x, y, z }) => {
-                let blockN = this.dimension.getBlockFromRay({ x: x, y: y, z: z }, Vector.up, { maxDistance: 319 - y });
-                return !Boolean(blockN);
-            }).call(this, Vector.add(this.block.location, Vector.up));
+        if (this.dimension.id == MinecraftDimensionTypes.overworld) {
+            return ((pos: Vector3) => {
+                let blockN = this.dimension.getBlockFromRay(pos, Vector.up, { maxDistance: 319 - pos.y })
+                return !Boolean(blockN)
+            }).call(this, Vector.add(this.location, Vector.up))
         }
-        return false;
+        return false
     }
 
     public spawnItemInBlock() {
-        if (this.isBlockDirt()) this.spawnItemsAbove(["dirt"]);
-        else if (this.isBlockClay()) this.spawnItemsAbove(["clay"]);
-        else if (this.isBlockCobblestone()) this.spawnItemsAbove(["cobblestone"]);
-        else if (this.isBlockObsidian()) this.spawnItemsAbove(["obsidian"]);
-        else if (this.isBlockNetherrack()) this.spawnItemsAbove(["netherrack"]);
-        else if (this.isBlockEndStone()) this.spawnItemsAbove(["end_stone"]);
-        this.setEmpty();
+        if (this.isBlockDirt()) this.spawnItemsAbove(["dirt"])
+        else if (this.isBlockClay()) this.spawnItemsAbove(["clay"])
+        else if (this.isBlockCobblestone()) this.spawnItemsAbove(["cobblestone"])
+        else if (this.isBlockObsidian()) this.spawnItemsAbove(["obsidian"])
+        else if (this.isBlockNetherrack()) this.spawnItemsAbove(["netherrack"])
+        else if (this.isBlockEndStone()) this.spawnItemsAbove(["end_stone"])
+        this.setEmpty()
     }
 
     public spawnItemsAbove(items: ItemStack[] | string[]): Entity[] {
-        let entities: Entity[] = [];
+        let entities: Entity[] = []
         for (let item of items) {
-            if (typeof item == "string") item = new ItemStack(ItemTypes.get(item));
-            let itemEntity = this.dimension.spawnItem(item, Vector.add(this.location, Vector.up));
-            entities.push(itemEntity);
+            if (typeof item == "string") item = new ItemStack(ItemTypes.get(item))
+            let itemEntity = this.dimension.spawnItem(item, this.getLocationAbove())
+            entities.push(itemEntity)
         }
-        return entities;
+        return entities
     }
 
     public isWaterOnTop(): Boolean {
-        let block: Block = this.dimension.getBlock(Vector.add(this.location, Vector.up));
-        return (block.typeId == MinecraftBlockTypes.water.id || block.typeId == MinecraftBlockTypes.flowingWater.id);
+        let block: Block = this.dimension.getBlock(this.getLocationAbove())
+        return (block.type == MinecraftBlockTypes.water || block.type == MinecraftBlockTypes.flowingWater)
     }
 
     public isLavaOnTop(): Boolean {
-        let block: Block = this.dimension.getBlock(Vector.add(this.location, Vector.up));
-        return (block.typeId == MinecraftBlockTypes.lava.id || block.typeId == MinecraftBlockTypes.flowingLava.id);
+        let block: Block = this.dimension.getBlock(this.getLocationAbove())
+        return (block.type == MinecraftBlockTypes.lava || block.type == MinecraftBlockTypes.flowingLava)
     }
 
     public transformToObsidian() {
         this.setBlockObsidian()
-        if (this.isBlockObsidian()) playSoundAt("random.fizz", this.location, this.dimension, { volume: 0.5, pitch: 2.4 });
+        if (this.isBlockObsidian()) playSoundAt("random.fizz", this.location, this.dimension, { volume: 0.5, pitch: 2.4 })
     }
 
     public transformToCobblestone() {
         this.setBlockCobblestone()
-        if (this.isBlockCobblestone()) playSoundAt("random.fizz", this.location, this.dimension, { volume: 0.5, pitch: 1.8 });
+        if (this.isBlockCobblestone()) playSoundAt("random.fizz", this.location, this.dimension, { volume: 0.5, pitch: 1.8 })
     }
 }
