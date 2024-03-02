@@ -1,0 +1,13 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:pebble_calcite",
+			"menu_category": { "group": "itemGroup.name.exnihilo.pebbles" }
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:pebble", "calcite"] },
+			"minecraft:icon": { "texture": "pebble_calcite" }
+		}
+	}
+}

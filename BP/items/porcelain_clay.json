@@ -1,17 +1,15 @@
 {
-    "format_version": "1.19.50",
-    "minecraft:item": {
-        "description": {
-            "identifier": "exnihilo:porcelain_clay"
-        },
-        "components": {
-            "tag:exnihilo:porcelain_clay": {},
-            "minecraft:creative_category": {
-                "category": "items"
-            },
-            "minecraft:icon": {
-                "texture": "porcelain_clay"
-            }
-        }
-    }
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:porcelain_clay",
+			"menu_category": {
+				"group": "itemGroup.name.exnihilo.porcelain_clay"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:porcelain_clay"] },
+			"minecraft:icon": { "texture": "porcelain_clay" }
+		}
+	}
 }

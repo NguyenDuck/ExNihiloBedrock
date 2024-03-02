@@ -1,0 +1,81 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:crook_wood",
+			"menu_category": {
+				"group": "itemGroup.name.exnihilo.crook"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:crook", "wood"] },
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": { "texture": "crook_bone" },
+			"minecraft:durability": {
+				"max_durability": 312
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["bone"],
+						"repair_amount": "q.max_durability / 4"
+					}
+				]
+			},
+			"minecraft:digger": {
+				"on_dig": {
+					"event": "durability"
+				},
+				"destroy_speeds": [
+					{
+						"block": "leaves",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 4
+					},
+					{
+						"block": "leaves2",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 4
+					},
+					{
+						"block": "mangrove_leaves",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 4
+					},
+					{
+						"block": {
+							"tags": "query.all_tags('exnihilo:infest_leaves')"
+						},
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 4
+					}
+				]
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"third_person": {
+						"scale": [0.05, 0.05, 0.05],
+						"position": [0, 0.75, -0.3]
+					}
+				}
+			}
+		},
+		"events": {
+			"durability": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				}
+			}
+		}
+	}
+}

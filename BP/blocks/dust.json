@@ -1,12 +1,15 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.20.60",
 	"minecraft:block": {
 		"description": {
-			"identifier": "exnihilo:dust"
+			"identifier": "exnihilo:dust",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.exnihilo.dust"
+			}
 		},
 		"components": {
-			"exnihilo:decoration_block": {},
-			"minecraft:unit_cube": {},
+			"minecraft:geometry": "minecraft:geometry.full_block",
 			"minecraft:light_dampening": 15,
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0.5

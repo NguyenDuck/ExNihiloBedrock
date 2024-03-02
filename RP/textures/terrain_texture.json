@@ -1,179 +1,179 @@
 {
-    "num_mip_levels": 4,
-    "padding": 8,
-    "resource_pack_name": "Exnihilo Bedrock",
-    "texture_name": "atlas.terrain",
-    "texture_data": {
-        "dust": {
-            "textures": "textures/blocks/dust"
-        },
-        "crushed_netherrack": {
-            "textures": "textures/blocks/crushed/netherrack"
-        },
-        "crushed_end_stone": {
-            "textures": "textures/blocks/crushed/end_stone"
-        },
-        "mesh_string": {
-            "textures": "textures/blocks/mesh/string"
-        },
-        "mesh_flint": {
-            "textures": "textures/blocks/mesh/flint"
-        },
-        "mesh_iron": {
-            "textures": "textures/blocks/mesh/iron"
-        },
-        "mesh_diamond": {
-            "textures": "textures/blocks/mesh/diamond"
-        },
-        "mesh_emerald": {
-            "textures": "textures/blocks/mesh/emerald"
-        },
-        "mesh_netherite": {
-            "textures": "textures/blocks/mesh/netherite"
-        },
-        "invisible": {
-            "textures": "textures/blocks/invisible"
-        },
-        "infesting_oak": {
-            "textures": {
-                "path": "textures/blocks/leaves_oak",
-                "tint_color": "#c3ddb9"
-            }
-        },
-        "infested_oak": {
-            "textures": "textures/blocks/leaves_oak"
-        },
-        "infesting_spruce": {
-            "textures": {
-                "path": "textures/blocks/leaves_spruce",
-                "tint_color": "#c3ddb9"
-            }
-        },
-        "infested_spruce": {
-            "textures": "textures/blocks/leaves_spruce"
-        },
-        "infesting_birch": {
-            "textures": {
-                "path": "textures/blocks/leaves_birch",
-                "tint_color": "#c3ddb9"
-            }
-        },
-        "infested_birch": {
-            "textures": "textures/blocks/leaves_birch"
-        },
-        "infesting_jungle": {
-            "textures": {
-                "path": "textures/blocks/leaves/infested/jungle",
-                "tint_color": "#c3ddb9"
-            }
-        },
-        "infested_jungle": {
-            "textures": "textures/blocks/leaves/infested/jungle"
-        },
-        "infesting_acacia": {
-            "textures": {
-                "path": "textures/blocks/leaves_acacia",
-                "tint_color": "#c3ddb9"
-            }
-        },
-        "infested_acacia": {
-            "textures": "textures/blocks/leaves_acacia"
-        },
-        "infesting_dark_oak": {
-            "textures": {
-                "path": "textures/blocks/leaves_big_oak",
-                "tint_color": "#c3ddb9"
-            }
-        },
-        "infested_dark_oak": {
-            "textures": "textures/blocks/leaves_big_oak"
-        },
-        "coarse_dirt": {
-            "textures": "textures/blocks/coarse_dirt"
-        },
-        "leaves_oak": {
-            "textures": "textures/blocks/leaves_oak_carried"
-        },
-        "leaves_spruce": {
-            "textures": "textures/blocks/leaves_spruce_carried"
-        },
-        "leaves_birch": {
-            "textures": "textures/blocks/leaves_birch_carried"
-        },
-        "leaves_jungle": {
-            "textures": "textures/blocks/leaves_jungle_carried"
-        },
-        "leaves_acacia": {
-            "textures": "textures/blocks/leaves_acacia_carried"
-        },
-        "leaves_dark_oak": {
-            "textures": "textures/blocks/leaves_big_oak_carried"
-        },
-        "leaves_mangrove": {
-            "textures": "textures/blocks/mangrove_leaves_carried"
-        },
-        "leaves_azalea": {
-            "textures": "textures/blocks/azalea_leaves"
-        },
-        "leaves_azalea_flowered": {
-            "textures": "textures/blocks/azalea_leaves_flowers"
-        },
-        "barrel_oak_bottom": {
-            "textures": "textures/blocks/barrel/oak/bottom"
-        },
-        "barrel_oak_side": {
-            "textures": "textures/blocks/barrel/oak/side"
-        },
-        "barrel_oak_top": {
-            "textures": "textures/blocks/barrel/oak/top"
-        },
-        "barrel_stone_bottom": {
-            "textures": "textures/blocks/barrel/stone/bottom"
-        },
-        "barrel_stone_side": {
-            "textures": "textures/blocks/barrel/stone/side"
-        },
-        "barrel_stone_top": {
-            "textures": "textures/blocks/barrel/stone/top"
-        },
-        "crucible_oak_side": {
-            "textures": "textures/blocks/crucible/oak/side"
-        },
-        "crucible_oak_top": {
-            "textures": "textures/blocks/crucible/oak/top"
-        },
-        "crucible_oak_bottom": {
-            "textures": "textures/blocks/crucible/oak/bottom"
-        },
-        "crucible_oak_inside": {
-            "textures": "textures/blocks/crucible/oak/inside"
-        },
-        "crucible_unfired_side": {
-            "textures": "textures/blocks/crucible/unfired/side"
-        },
-        "crucible_unfired_top": {
-            "textures": "textures/blocks/crucible/unfired/top"
-        },
-        "crucible_unfired_bottom": {
-            "textures": "textures/blocks/crucible/unfired/bottom"
-        },
-        "crucible_unfired_inside": {
-            "textures": "textures/blocks/crucible/unfired/inside"
-        },
-        "crucible_fired_side": {
-            "textures": "textures/blocks/crucible/fired/side"
-        },
-        "crucible_fired_top": {
-            "textures": "textures/blocks/crucible/fired/top"
-        },
-        "crucible_fired_bottom": {
-            "textures": "textures/blocks/crucible/fired/bottom"
-        },
-        "crucible_fired_inside": {
-            "textures": "textures/blocks/crucible/fired/inside"
-        },
-        "fluid_flow": {
-            "textures": "textures/blocks/water_flow_65"
-        }
-    }
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Exnihilo Bedrock",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"dust": {
+			"textures": "textures/blocks/dust"
+		},
+		"crushed_netherrack": {
+			"textures": "textures/blocks/crushed/netherrack"
+		},
+		"crushed_end_stone": {
+			"textures": "textures/blocks/crushed/end_stone"
+		},
+		"mesh_string": {
+			"textures": "textures/blocks/mesh/string"
+		},
+		"mesh_flint": {
+			"textures": "textures/blocks/mesh/flint"
+		},
+		"mesh_iron": {
+			"textures": "textures/blocks/mesh/iron"
+		},
+		"mesh_diamond": {
+			"textures": "textures/blocks/mesh/diamond"
+		},
+		"mesh_emerald": {
+			"textures": "textures/blocks/mesh/emerald"
+		},
+		"mesh_netherite": {
+			"textures": "textures/blocks/mesh/netherite"
+		},
+		"invisible": {
+			"textures": "textures/blocks/invisible"
+		},
+		"infesting_oak": {
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#c3ddb9"
+			}
+		},
+		"infested_oak": {
+			"textures": "textures/blocks/leaves_oak"
+		},
+		"infesting_spruce": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#c3ddb9"
+			}
+		},
+		"infested_spruce": {
+			"textures": "textures/blocks/leaves_spruce"
+		},
+		"infesting_birch": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#c3ddb9"
+			}
+		},
+		"infested_birch": {
+			"textures": "textures/blocks/leaves_birch"
+		},
+		"infesting_jungle": {
+			"textures": {
+				"path": "textures/blocks/leaves/infested/jungle",
+				"tint_color": "#c3ddb9"
+			}
+		},
+		"infested_jungle": {
+			"textures": "textures/blocks/leaves/infested/jungle"
+		},
+		"infesting_acacia": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#c3ddb9"
+			}
+		},
+		"infested_acacia": {
+			"textures": "textures/blocks/leaves_acacia"
+		},
+		"infesting_dark_oak": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#c3ddb9"
+			}
+		},
+		"infested_dark_oak": {
+			"textures": "textures/blocks/leaves_big_oak"
+		},
+		"coarse_dirt": {
+			"textures": "textures/blocks/coarse_dirt"
+		},
+		"leaves_oak": {
+			"textures": "textures/blocks/leaves_oak_carried"
+		},
+		"leaves_spruce": {
+			"textures": "textures/blocks/leaves_spruce_carried"
+		},
+		"leaves_birch": {
+			"textures": "textures/blocks/leaves_birch_carried"
+		},
+		"leaves_jungle": {
+			"textures": "textures/blocks/leaves_jungle_carried"
+		},
+		"leaves_acacia": {
+			"textures": "textures/blocks/leaves_acacia_carried"
+		},
+		"leaves_dark_oak": {
+			"textures": "textures/blocks/leaves_big_oak_carried"
+		},
+		"leaves_mangrove": {
+			"textures": "textures/blocks/mangrove_leaves_carried"
+		},
+		"leaves_azalea": {
+			"textures": "textures/blocks/azalea_leaves"
+		},
+		"leaves_azalea_flowered": {
+			"textures": "textures/blocks/azalea_leaves_flowers"
+		},
+		"barrel_oak_bottom": {
+			"textures": "textures/blocks/barrel/oak/bottom"
+		},
+		"barrel_oak_side": {
+			"textures": "textures/blocks/barrel/oak/side"
+		},
+		"barrel_oak_top": {
+			"textures": "textures/blocks/barrel/oak/top"
+		},
+		"barrel_stone_bottom": {
+			"textures": "textures/blocks/barrel/stone/bottom"
+		},
+		"barrel_stone_side": {
+			"textures": "textures/blocks/barrel/stone/side"
+		},
+		"barrel_stone_top": {
+			"textures": "textures/blocks/barrel/stone/top"
+		},
+		"crucible_oak_side": {
+			"textures": "textures/blocks/crucible/oak/side"
+		},
+		"crucible_oak_top": {
+			"textures": "textures/blocks/crucible/oak/top"
+		},
+		"crucible_oak_bottom": {
+			"textures": "textures/blocks/crucible/oak/bottom"
+		},
+		"crucible_oak_inside": {
+			"textures": "textures/blocks/crucible/oak/inside"
+		},
+		"crucible_unfired_side": {
+			"textures": "textures/blocks/crucible/unfired/side"
+		},
+		"crucible_unfired_top": {
+			"textures": "textures/blocks/crucible/unfired/top"
+		},
+		"crucible_unfired_bottom": {
+			"textures": "textures/blocks/crucible/unfired/bottom"
+		},
+		"crucible_unfired_inside": {
+			"textures": "textures/blocks/crucible/unfired/inside"
+		},
+		"crucible_fired_side": {
+			"textures": "textures/blocks/crucible/fired/side"
+		},
+		"crucible_fired_top": {
+			"textures": "textures/blocks/crucible/fired/top"
+		},
+		"crucible_fired_bottom": {
+			"textures": "textures/blocks/crucible/fired/bottom"
+		},
+		"crucible_fired_inside": {
+			"textures": "textures/blocks/crucible/fired/inside"
+		},
+		"fluid_flow": {
+			"textures": "textures/blocks/water_flow_65"
+		}
+	}
 }

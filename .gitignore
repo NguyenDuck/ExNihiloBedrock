@@ -4,3 +4,5 @@ Desktop.ini
 BP/components
 previews
 builds
+dist/
+node_modules/

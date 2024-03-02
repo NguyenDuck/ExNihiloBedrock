@@ -1,123 +1,106 @@
 {
-    "format_version": "1.19.60",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "exnihilo:barrel_checker",
-            "is_summonable": true
-        },
-        "component_groups": {
-            "despawn": {
-                "minecraft:instant_despawn": {
-                    "remove_child_entities": true
-                }
-            },
-            "exnihilo:not_rainable": {
-                "minecraft:mark_variant": {
-                    "value": 0
-                }
-            },
-            "exnihilo:rainable": {
-                "minecraft:mark_variant": {
-                    "value": 1
-                }
-            }
-        },
-        "components": {
-            "minecraft:collision_box": {
-                "height": 0.0001,
-                "width": 0.0001
-            },
-            "minecraft:custom_hit_test": {
-                "hitboxes": [
-                    {
-                        "height": 0,
-                        "pivot": [
-                            0,
-                            -1,
-                            0
-                        ],
-                        "width": 0
-                    }
-                ]
-            },
-            "minecraft:physics": {
-                "has_collision": false,
-                "has_gravity": false
-            },
-            "minecraft:damage_sensor": {
-                "triggers": {
-                    "cause": "any",
-                    "deals_damage": false
-                }
-            },
-            "minecraft:fire_immune": true,
-            "minecraft:environment_sensor": {
-                "triggers": [
-                    {
-                        "filters": {
-                            "test": "weather_at_position",
-                            "value": "rain"
-                        },
-                        "event": "exnihilo:rainable"
-                    },
-                    {
-                        "filters": {
-                            "test": "weather_at_position",
-                            "operator": "not",
-                            "value": "rain"
-                        },
-                        "event": "exnihilo:not_rainable"
-                    }
-                ]
-            },
-            "minecraft:timer": {
-                "looping": true,
-                "time": [
-                    0.25,
-                    0.5
-                ],
-                "time_down_event": {
-                    "event": "exnihilo:despawn_if_not_below_block"
-                }
-            }
-        },
-        "events": {
-            "despawn": {
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            },
-            "exnihilo:despawn_if_not_below_block": {
-                "run_command": {
-                    "command": "/execute positioned ~~-1~ run execute if block ~~~ air 0 run event entity @s despawn"
-                }
-            },
-            "exnihilo:not_rainable": {
-                "add": {
-                    "component_groups": [
-                        "exnihilo:not_rainable"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "exnihilo:rainable"
-                    ]
-                }
-            },
-            "exnihilo:rainable": {
-                "add": {
-                    "component_groups": [
-                        "exnihilo:rainable"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "exnihilo:not_rainable"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.20.60",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "exnihilo:barrel_checker",
+			"is_summonable": true
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"exnihilo:not_rainable": {
+				"minecraft:mark_variant": {
+					"value": 0
+				}
+			},
+			"exnihilo:rainable": {
+				"minecraft:mark_variant": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"height": 0.0001,
+				"width": 0.0001
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"height": 0,
+						"pivot": [0, -1, 0],
+						"width": 0
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "weather_at_position",
+							"value": "rain"
+						},
+						"event": "exnihilo:rainable"
+					},
+					{
+						"filters": {
+							"test": "weather_at_position",
+							"operator": "not",
+							"value": "rain"
+						},
+						"event": "exnihilo:not_rainable"
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": [0.25, 0.5],
+				"time_down_event": {
+					"event": "exnihilo:despawn_if_not_below_block"
+				}
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": ["despawn"]
+				}
+			},
+			"exnihilo:despawn_if_not_below_block": {
+				"run_command": {
+					"command": "/execute positioned ~~-1~ run execute if block ~~~ air 0 run event entity @s despawn"
+				}
+			},
+			"exnihilo:not_rainable": {
+				"add": {
+					"component_groups": ["exnihilo:not_rainable"]
+				},
+				"remove": {
+					"component_groups": ["exnihilo:rainable"]
+				}
+			},
+			"exnihilo:rainable": {
+				"add": {
+					"component_groups": ["exnihilo:rainable"]
+				},
+				"remove": {
+					"component_groups": ["exnihilo:not_rainable"]
+				}
+			}
+		}
+	}
 }

@@ -140,3 +140,5 @@ tile.exnihilo:crucible_fired.name=Fired Crucible
 tile.exnihilo:crucible_unfired.name=Unfired Crucible
 
 item.exnihilo:porcelain_clay=Porcelain Clay
+
+itemGroup.name.exnihilo.mesh=Meshes

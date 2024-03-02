@@ -1,15 +1,20 @@
 {
-	"format_version": "1.19.50",
+	"format_version": "1.20.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "exnihilo:mesh_diamond",
 			"menu_category": {
-				"group": "itemGroup.name.mesh"
+				"category": "items",
+				"group": "itemGroup.name.exnihilo.mesh"
 			}
 		},
 		"components": {
-			"exnihilo:not_placable": {},
+			"tag:exnihilo:not_placable": {},
 			"minecraft:geometry": "geometry.mesh",
+			"minecraft:placement_filter": {
+				"allowed_faces": ["down"],
+				"block_filter": ["dragon_egg"]
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "mesh_diamond",

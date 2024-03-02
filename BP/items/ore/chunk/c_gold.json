@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "minecraft:ore_chunk_gold",
+			"menu_category": {
+				"group": "itemGroup.name.exnihilo.ore_chunk"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:ore_chunk", "gold"] },
+			"minecraft:icon": { "texture": "ore_chunk_gold" }
+		}
+	}
+}

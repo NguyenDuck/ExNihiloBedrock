@@ -1,67 +1,37 @@
 {
 	"format_version": 2,
 	"metadata": {
-		"authors": [
-			"NguyenDuck"
-		],
-		"generated_with": {
-			"bridge": [
-				"2.6.1"
-			],
-			"dash": [
-				"0.10.10"
-			]
-		}
+		"authors": ["NguyenDuck"]
 	},
 	"header": {
 		"name": "Ex Nihilo: Bedrock",
 		"description": "Included in tree",
-		"min_engine_version": [
-			1,
-			20,
-			10
-		],
+		"min_engine_version": [1, 20, 60],
 		"uuid": "32806d5f-111f-4c9d-87de-c609dcb682c5",
-		"version": [
-			1,
-			0,
-			4
-		]
+		"version": [1, 0, 5]
 	},
 	"modules": [
 		{
 			"type": "data",
 			"uuid": "8fa7c9a5-46ac-45c2-946e-a1cfc3f7547f",
-			"version": [
-				1,
-				0,
-				0
-			]
+			"version": [1, 0, 0]
 		},
 		{
 			"type": "script",
 			"language": "javascript",
 			"entry": "scripts/main.js",
 			"uuid": "31808dc5-78d9-4ba1-841d-2e9952daf2a7",
-			"version": [
-				1,
-				0,
-				0
-			]
+			"version": [1, 0, 0]
 		}
 	],
 	"dependencies": [
 		{
 			"uuid": "896ff834-e66c-4373-ac72-7a66f3755ea4",
-			"version": [
-				1,
-				0,
-				4
-			]
+			"version": [1, 0, 5]
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.4.0-beta"
+			"version": "1.9.0-beta"
 		}
 	]
 }

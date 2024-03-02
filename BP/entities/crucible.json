@@ -1,78 +1,72 @@
 {
-    "format_version": "1.19.60",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "exnihilo:crucible",
-            "is_summonable": true
-        },
-        "component_groups": {
-            "despawn": {
-                "minecraft:instant_despawn": {
-                    "remove_child_entities": true
-                }
-            }
-        },
-        "components": {
-            "minecraft:collision_box": {
-                "height": 0.1,
-                "width": 0.1
-            },
-            "minecraft:custom_hit_test": {
-                "hitboxes": [
-                    {
-                        "height": 0,
-                        "pivot": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "width": 0
-                    }
-                ]
-            },
-            "minecraft:physics": {
-                "has_collision": false,
-                "has_gravity": false
-            },
-            "minecraft:inside_block_notifier": {
-                "block_list": [
-                    {
-                        "block": {
-                            "name": "exnihilo:crucible_oak"
-                        },
-                        "exited_block_event": {
-                            "event": "despawn"
-                        }
-                    }
-                ]
-            },
-            "minecraft:damage_sensor": {
-                "triggers": {
-                    "cause": "any",
-                    "deals_damage": false
-                }
-            },
-            "minecraft:fire_immune": true,
-            "minecraft:environment_sensor": {
-                "triggers": [
-                    {
-                        "filters": {
-                            "test": "in_block",
-                            "value": "air"
-                        },
-                        "event": "despawn"
-                    }
-                ]
-            }
-        },
-        "events": {
-            "despawn": {
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.19.60",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "exnihilo:crucible",
+			"is_summonable": true
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"height": 0.1,
+				"width": 0.1
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"height": 0,
+						"pivot": [0, 0, 0],
+						"width": 0
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+						"block": {
+							"name": "exnihilo:crucible_oak"
+						},
+						"exited_block_event": {
+							"event": "despawn"
+						}
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "in_block",
+							"value": "air"
+						},
+						"event": "despawn"
+					}
+				]
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": ["despawn"]
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,85 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:hammer_netherite",
+			"menu_category": {
+				"group": "itemGroup.name.exnihilo.hammer"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:hammer", "netherite"] },
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": { "texture": "hammer_netherite" },
+			"minecraft:durability": {
+				"max_durability": 2031
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["netherite_ingot"],
+						"repair_amount": "q.max_durability / 2"
+					}
+				]
+			},
+			"minecraft:digger": {
+				"on_dig": {
+					"event": "durability"
+				},
+				"destroy_speeds": [
+					{
+						"block": "stone",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 10
+					},
+					{
+						"block": "cobblestone",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 9
+					},
+					{
+						"block": "gravel",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 10
+					},
+					{
+						"block": "sand",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 10
+					},
+					{
+						"block": "netherrack",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 10
+					},
+					{
+						"block": "end_stone",
+						"on_dig": {
+							"event": "durability"
+						},
+						"speed": 9
+					}
+				]
+			}
+		},
+		"events": {
+			"durability": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				}
+			}
+		}
+	}
+}

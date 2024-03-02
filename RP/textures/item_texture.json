@@ -1,261 +1,87 @@
 {
-    "resource_pack_name": "Exnihilo Bedrock",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "beehive_frame": {
-            "textures": "textures/items/beehive_frame"
-        },
-        "bucket_water_sea": {
-            "textures": "textures/items/bucket/water/sea"
-        },
-        "bucket_water_witch": {
-            "textures": "textures/items/bucket/water/witch"
-        },
-        "cooked_silkworm": {
-            "textures": "textures/items/cooked/silkworm"
-        },
-        "crook_andesite": {
-            "textures": "textures/items/crook/andesite"
-        },
-        "crook_bone": {
-            "textures": "textures/items/crook/bone"
-        },
-        "crook_diamond": {
-            "textures": "textures/items/crook/diamond"
-        },
-        "crook_diorite": {
-            "textures": "textures/items/crook/diorite"
-        },
-        "crook_golden": {
-            "textures": "textures/items/crook/golden"
-        },
-        "crook_granite": {
-            "textures": "textures/items/crook/granite"
-        },
-        "crook_iron": {
-            "textures": "textures/items/crook/iron"
-        },
-        "crook_netherite": {
-            "textures": "textures/items/crook/netherite"
-        },
-        "crook_stone": {
-            "textures": "textures/items/crook/stone"
-        },
-        "crook_wooden": {
-            "textures": "textures/items/crook/wooden"
-        },
-        "doll_bee": {
-            "textures": "textures/items/doll/bee"
-        },
-        "doll_blaze": {
-            "textures": "textures/items/doll/blaze"
-        },
-        "doll_enderman": {
-            "textures": "textures/items/doll/enderman"
-        },
-        "doll_guardian": {
-            "textures": "textures/items/doll/guardian"
-        },
-        "doll_porcelain": {
-            "textures": "textures/items/doll/porcelain"
-        },
-        "doll_shulker": {
-            "textures": "textures/items/doll/shulker"
-        },
-        "hammer_diamond": {
-            "textures": "textures/items/hammer/diamond"
-        },
-        "hammer_golden": {
-            "textures": "textures/items/hammer/golden"
-        },
-        "hammer_iron": {
-            "textures": "textures/items/hammer/iron"
-        },
-        "hammer_netherite": {
-            "textures": "textures/items/hammer/netherite"
-        },
-        "hammer_stone": {
-            "textures": "textures/items/hammer/stone"
-        },
-        "hammer_wooden": {
-            "textures": "textures/items/hammer/wooden"
-        },
-        "larva_coral_brain": {
-            "textures": "textures/items/larva/coral/brain"
-        },
-        "larva_coral_bubble": {
-            "textures": "textures/items/larva/coral/bubble"
-        },
-        "larva_coral_fire": {
-            "textures": "textures/items/larva/coral/fire"
-        },
-        "larva_coral_horn": {
-            "textures": "textures/items/larva/coral/horn"
-        },
-        "larva_coral_tube": {
-            "textures": "textures/items/larva/coral/tube"
-        },
-        "ore_ingot_aluminum": {
-            "textures": "textures/items/ore/ingot/aluminum"
-        },
-        "ore_ingot_lead": {
-            "textures": "textures/items/ore/ingot/lead"
-        },
-        "ore_ingot_nickel": {
-            "textures": "textures/items/ore/ingot/nickel"
-        },
-        "ore_ingot_platinum": {
-            "textures": "textures/items/ore/ingot/platinum"
-        },
-        "ore_ingot_silver": {
-            "textures": "textures/items/ore/ingot/silver"
-        },
-        "ore_ingot_tin": {
-            "textures": "textures/items/ore/ingot/tin"
-        },
-        "ore_ingot_uranium": {
-            "textures": "textures/items/ore/ingot/uranium"
-        },
-        "ore_ingot_zinc": {
-            "textures": "textures/items/ore/ingot/zinc"
-        },
-        "ore_nugget_aluminum": {
-            "textures": "textures/items/ore/nugget/aluminum"
-        },
-        "ore_nugget_copper": {
-            "textures": "textures/items/ore/nugget/copper"
-        },
-        "ore_nugget_lead": {
-            "textures": "textures/items/ore/nugget/lead"
-        },
-        "ore_nugget_nickel": {
-            "textures": "textures/items/ore/nugget/nickel"
-        },
-        "ore_nugget_platinum": {
-            "textures": "textures/items/ore/nugget/platinum"
-        },
-        "ore_nugget_silver": {
-            "textures": "textures/items/ore/nugget/silver"
-        },
-        "ore_nugget_tin": {
-            "textures": "textures/items/ore/nugget/tin"
-        },
-        "ore_nugget_uranium": {
-            "textures": "textures/items/ore/nugget/uranium"
-        },
-        "ore_nugget_zinc": {
-            "textures": "textures/items/ore/nugget/zinc"
-        },
-        "ore_piece_aluminum": {
-            "textures": "textures/items/ore/piece/aluminum"
-        },
-        "ore_piece_copper": {
-            "textures": "textures/items/ore/piece/copper"
-        },
-        "ore_piece_gold": {
-            "textures": "textures/items/ore/piece/gold"
-        },
-        "ore_piece_iron": {
-            "textures": "textures/items/ore/piece/iron"
-        },
-        "ore_piece_lead": {
-            "textures": "textures/items/ore/piece/lead"
-        },
-        "ore_piece_nickel": {
-            "textures": "textures/items/ore/piece/nickel"
-        },
-        "ore_piece_platinum": {
-            "textures": "textures/items/ore/piece/platinum"
-        },
-        "ore_piece_silver": {
-            "textures": "textures/items/ore/piece/silver"
-        },
-        "ore_piece_tin": {
-            "textures": "textures/items/ore/piece/tin"
-        },
-        "ore_piece_uranium": {
-            "textures": "textures/items/ore/piece/uranium"
-        },
-        "ore_piece_zinc": {
-            "textures": "textures/items/ore/piece/zinc"
-        },
-        "ore_raw_aluminum": {
-            "textures": "textures/items/ore/raw/aluminum"
-        },
-        "ore_raw_lead": {
-            "textures": "textures/items/ore/raw/lead"
-        },
-        "ore_raw_nickel": {
-            "textures": "textures/items/ore/raw/nickel"
-        },
-        "ore_raw_platinum": {
-            "textures": "textures/items/ore/raw/platinum"
-        },
-        "ore_raw_silver": {
-            "textures": "textures/items/ore/raw/silver"
-        },
-        "ore_raw_tin": {
-            "textures": "textures/items/ore/raw/tin"
-        },
-        "ore_raw_uranium": {
-            "textures": "textures/items/ore/raw/uranium"
-        },
-        "ore_raw_zinc": {
-            "textures": "textures/items/ore/raw/zinc"
-        },
-        "pebble_andesite": {
-            "textures": "textures/items/pebble/andesite"
-        },
-        "pebble_basalt": {
-            "textures": "textures/items/pebble/basalt"
-        },
-        "pebble_blackstone": {
-            "textures": "textures/items/pebble/blackstone"
-        },
-        "pebble_calcite": {
-            "textures": "textures/items/pebble/calcite"
-        },
-        "pebble_deepslate": {
-            "textures": "textures/items/pebble/deepslate"
-        },
-        "pebble_diorite": {
-            "textures": "textures/items/pebble/diorite"
-        },
-        "pebble_dripstone": {
-            "textures": "textures/items/pebble/dripstone"
-        },
-        "pebble_end_stone": {
-            "textures": "textures/items/pebble/end_stone"
-        },
-        "pebble_granite": {
-            "textures": "textures/items/pebble/granite"
-        },
-        "pebble_netherrack": {
-            "textures": "textures/items/pebble/netherrack"
-        },
-        "pebble_stone": {
-            "textures": "textures/items/pebble/stone"
-        },
-        "pebble_tuff": {
-            "textures": "textures/items/pebble/tuff"
-        },
-        "seeds_grass": {
-            "textures": "textures/items/seeds/grass"
-        },
-        "silkworm": {
-            "textures": "textures/items/silkworm"
-        },
-        "spore_mycelium": {
-            "textures": "textures/items/spore/mycelium"
-        },
-        "spore_nylium_crimson": {
-            "textures": "textures/items/spore/nylium/crimson"
-        },
-        "spore_nylium_warped": {
-            "textures": "textures/items/spore/nylium/warped"
-        },
-        "porcelain_clay": {
-            "textures": "textures/items/porcelain_clay"
-        }
-    }
+	"resource_pack_name": "Exnihilo Bedrock",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"beehive_frame": {
+			"textures": "textures/items/beehive_frame"
+		},
+		"bucket_water_sea": {
+			"textures": "textures/items/bucket/water/sea"
+		},
+		"bucket_water_witch": {
+			"textures": "textures/items/bucket/water/witch"
+		},
+		"crook_bone": {
+			"textures": "textures/items/crook/bone"
+		},
+		"crook_wood": {
+			"textures": "textures/items/crook/wood"
+		},
+		"hammer_diamond": {
+			"textures": "textures/items/hammer/diamond"
+		},
+		"hammer_gold": {
+			"textures": "textures/items/hammer/gold"
+		},
+		"hammer_iron": {
+			"textures": "textures/items/hammer/iron"
+		},
+		"hammer_netherite": {
+			"textures": "textures/items/hammer/netherite"
+		},
+		"hammer_stone": {
+			"textures": "textures/items/hammer/stone"
+		},
+		"hammer_wood": {
+			"textures": "textures/items/hammer/wood"
+		},
+		"pebble_andesite": {
+			"textures": "textures/items/pebble/andesite"
+		},
+		"pebble_basalt": {
+			"textures": "textures/items/pebble/basalt"
+		},
+		"pebble_blackstone": {
+			"textures": "textures/items/pebble/blackstone"
+		},
+		"pebble_calcite": {
+			"textures": "textures/items/pebble/calcite"
+		},
+		"pebble_deepslate": {
+			"textures": "textures/items/pebble/deepslate"
+		},
+		"pebble_diorite": {
+			"textures": "textures/items/pebble/diorite"
+		},
+		"pebble_granite": {
+			"textures": "textures/items/pebble/granite"
+		},
+		"pebble_stone": {
+			"textures": "textures/items/pebble/stone"
+		},
+		"pebble_tuff": {
+			"textures": "textures/items/pebble/tuff"
+		},
+		"seeds_grass": {
+			"textures": "textures/items/seeds/grass"
+		},
+		"silkworm": {
+			"textures": "textures/items/silkworm"
+		},
+		"cooked_silkworm": {
+			"textures": "textures/items/cooked_silkworm"
+		},
+		"spore_mycelium": {
+			"textures": "textures/items/spore/mycelium"
+		},
+		"spore_nylium_crimson": {
+			"textures": "textures/items/spore/nylium/crimson"
+		},
+		"spore_nylium_warped": {
+			"textures": "textures/items/spore/nylium/warped"
+		},
+		"porcelain_clay": {
+			"textures": "textures/items/porcelain_clay"
+		}
+	}
 }

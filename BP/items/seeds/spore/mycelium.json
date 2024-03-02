@@ -2,14 +2,14 @@
 	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
-			"identifier": "exnihilo:seeds_grass",
+			"identifier": "exnihilo:spore_mycelium",
 			"menu_category": {
 				"group": "itemGroup.name.exnihilo.seeds"
 			}
 		},
 		"components": {
-			"minecraft:tags": { "tags": ["exnihilo:seeds", "grass"] },
-			"minecraft:icon": { "texture": "seeds_grass" }
+			"minecraft:tags": { "tags": ["exnihilo:seeds", "mycelium"] },
+			"minecraft:icon": { "texture": "spore_mycelium" }
 		}
 	}
 }

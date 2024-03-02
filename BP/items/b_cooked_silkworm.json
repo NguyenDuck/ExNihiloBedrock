@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:cooked_silkworm",
+			"menu_category": {
+				"group": "itemGroup.name.exnihilo.silkworm"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:silkworm", "cooked"] },
+			"minecraft:icon": { "texture": "cooked_silkworm" },
+			"minecraft:use_animation": "eat",
+			"minecraft:food": {
+				"nutrition": 2,
+				"saturation_modifier": 1,
+				"can_always_eat": true
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6,
+				"movement_modifier": 0.35
+			}
+		}
+	}
+}

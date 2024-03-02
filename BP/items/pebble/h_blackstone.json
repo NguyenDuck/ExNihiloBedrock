@@ -1,0 +1,13 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:pebble_blackstone",
+			"menu_category": { "group": "itemGroup.name.exnihilo.pebbles" }
+		},
+		"components": {
+			"minecraft:tags": { "tags": ["exnihilo:pebble", "blackstone"] },
+			"minecraft:icon": { "texture": "pebble_blackstone" }
+		}
+	}
+}
